@@ -1,0 +1,1 @@
+global._room.use_card(id);

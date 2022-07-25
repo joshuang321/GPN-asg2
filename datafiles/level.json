@@ -1,0 +1,16 @@
+[
+    {
+        "levelno" : 1,
+            "enemy" : [
+            { "id" : 1, "health" : 30 }
+        ]
+    },
+
+    {
+        "levelno" : 2,
+        "enemy" : [
+            { "id" : 1, "health" : 40 },
+            { "id" : 1, "health" : 50 }
+        ]
+    }
+]

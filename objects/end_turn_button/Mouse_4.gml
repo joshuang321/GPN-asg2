@@ -1,0 +1,1 @@
+global._room.end_turn();

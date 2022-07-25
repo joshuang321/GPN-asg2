@@ -1,7 +1,28 @@
 {
   "resources": [
-    {"id":{"name":"Sprite1","path":"sprites/Sprite1/Sprite1.yy",},"order":0,},
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
+    {"id":{"name":"MainRoom_startButton","path":"sprites/MainRoom_startButton/MainRoom_startButton.yy",},"order":8,},
+    {"id":{"name":"MainRoom","path":"rooms/MainRoom/MainRoom.yy",},"order":1,},
+    {"id":{"name":"enemy_obj","path":"objects/enemy_obj/enemy_obj.yy",},"order":1,},
+    {"id":{"name":"atk","path":"sprites/atk/atk.yy",},"order":6,},
+    {"id":{"name":"GameState","path":"scripts/GameState/GameState.yy",},"order":6,},
+    {"id":{"name":"Player","path":"scripts/Player/Player.yy",},"order":7,},
+    {"id":{"name":"MainRoomStartButton","path":"objects/MainRoomStartButton/MainRoomStartButton.yy",},"order":4,},
+    {"id":{"name":"blk","path":"sprites/blk/blk.yy",},"order":7,},
+    {"id":{"name":"Misc","path":"scripts/Misc/Misc.yy",},"order":4,},
+    {"id":{"name":"card_block_bkgnd","path":"sprites/card_block_bkgnd/card_block_bkgnd.yy",},"order":10,},
+    {"id":{"name":"player_obj","path":"objects/player_obj/player_obj.yy",},"order":0,},
+    {"id":{"name":"card_attack_bkgnd","path":"sprites/card_attack_bkgnd/card_attack_bkgnd.yy",},"order":11,},
+    {"id":{"name":"card_obj","path":"objects/card_obj/card_obj.yy",},"order":2,},
+    {"id":{"name":"Room","path":"scripts/Room/Room.yy",},"order":10,},
+    {"id":{"name":"button","path":"sprites/button/button.yy",},"order":5,},
+    {"id":{"name":"player","path":"sprites/player/player.yy",},"order":0,},
+    {"id":{"name":"select_frame","path":"sprites/select_frame/select_frame.yy",},"order":9,},
+    {"id":{"name":"enemy","path":"sprites/enemy/enemy.yy",},"order":1,},
+    {"id":{"name":"Level","path":"scripts/Level/Level.yy",},"order":9,},
+    {"id":{"name":"end_turn_button","path":"objects/end_turn_button/end_turn_button.yy",},"order":3,},
+    {"id":{"name":"Config","path":"scripts/Config/Config.yy",},"order":8,},
+    {"id":{"name":"backgnd","path":"sprites/backgnd/backgnd.yy",},"order":4,},
+    {"id":{"name":"Level1","path":"rooms/Level1/Level1.yy",},"order":0,},
   ],
   "Options": [
     {"name":"Main","path":"options/main/options_main.yy",},
@@ -15,7 +36,8 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"MainRoom","path":"rooms/MainRoom/MainRoom.yy",},},
+    {"roomId":{"name":"Level1","path":"rooms/Level1/Level1.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
@@ -39,9 +61,12 @@
   "TextureGroups": [
     {"isScaled":true,"compressFormat":"bz2","autocrop":true,"border":2,"mipsToGenerate":0,"groupParent":null,"targets":-1,"resourceVersion":"1.3","name":"Default","resourceType":"GMTextureGroup",},
   ],
-  "IncludedFiles": [],
+  "IncludedFiles": [
+    {"CopyToMask":3035461389054378222,"filePath":"datafiles","resourceVersion":"1.0","name":"config.json","resourceType":"GMIncludedFile",},
+    {"CopyToMask":3035461389054378222,"filePath":"datafiles","resourceVersion":"1.0","name":"level.json","resourceType":"GMIncludedFile",},
+  ],
   "MetaData": {
-    "IDEVersion": "2022.5.0.8",
+    "IDEVersion": "2022.6.0.23",
   },
   "resourceVersion": "1.5",
   "name": "GPN asg2",
