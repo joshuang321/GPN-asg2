@@ -1,1 +1,0 @@
-global._room = new Room(2);

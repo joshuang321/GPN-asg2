@@ -1,14 +1,19 @@
 {
   "resources": [
+    {"id":{"name":"next_room_button","path":"objects/next_room_button/next_room_button.yy",},"order":6,},
     {"id":{"name":"MainRoom_startButton","path":"sprites/MainRoom_startButton/MainRoom_startButton.yy",},"order":8,},
+    {"id":{"name":"victory","path":"sprites/victory/victory.yy",},"order":12,},
     {"id":{"name":"MainRoom","path":"rooms/MainRoom/MainRoom.yy",},"order":1,},
     {"id":{"name":"enemy_obj","path":"objects/enemy_obj/enemy_obj.yy",},"order":1,},
     {"id":{"name":"atk","path":"sprites/atk/atk.yy",},"order":6,},
     {"id":{"name":"GameState","path":"scripts/GameState/GameState.yy",},"order":6,},
     {"id":{"name":"Player","path":"scripts/Player/Player.yy",},"order":7,},
+    {"id":{"name":"next_room","path":"sprites/next_room/next_room.yy",},"order":14,},
     {"id":{"name":"MainRoomStartButton","path":"objects/MainRoomStartButton/MainRoomStartButton.yy",},"order":4,},
     {"id":{"name":"blk","path":"sprites/blk/blk.yy",},"order":7,},
+    {"id":{"name":"defeat","path":"sprites/defeat/defeat.yy",},"order":13,},
     {"id":{"name":"Misc","path":"scripts/Misc/Misc.yy",},"order":4,},
+    {"id":{"name":"banner","path":"objects/banner/banner.yy",},"order":5,},
     {"id":{"name":"card_block_bkgnd","path":"sprites/card_block_bkgnd/card_block_bkgnd.yy",},"order":10,},
     {"id":{"name":"player_obj","path":"objects/player_obj/player_obj.yy",},"order":0,},
     {"id":{"name":"card_attack_bkgnd","path":"sprites/card_attack_bkgnd/card_attack_bkgnd.yy",},"order":11,},
@@ -22,7 +27,7 @@
     {"id":{"name":"end_turn_button","path":"objects/end_turn_button/end_turn_button.yy",},"order":3,},
     {"id":{"name":"Config","path":"scripts/Config/Config.yy",},"order":8,},
     {"id":{"name":"backgnd","path":"sprites/backgnd/backgnd.yy",},"order":4,},
-    {"id":{"name":"Level1","path":"rooms/Level1/Level1.yy",},"order":0,},
+    {"id":{"name":"LevelRoom","path":"rooms/LevelRoom/LevelRoom.yy",},"order":0,},
   ],
   "Options": [
     {"name":"Main","path":"options/main/options_main.yy",},
@@ -37,7 +42,7 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"MainRoom","path":"rooms/MainRoom/MainRoom.yy",},},
-    {"roomId":{"name":"Level1","path":"rooms/Level1/Level1.yy",},},
+    {"roomId":{"name":"LevelRoom","path":"rooms/LevelRoom/LevelRoom.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},

@@ -10,6 +10,10 @@ function Room(_levelno) constructor
 	game_state = _GAME_STATE_PLAYER;
 	levelno = _levelno;
 	
+	_button = instance_create_layer(1120, 512,
+		"Instances",
+		end_turn_button);
+	
 	for (var _i=0;
 		_i<array_length(global._level);
 		_i++)
@@ -132,7 +136,7 @@ function Room(_levelno) constructor
 						_enemy_selected._health += __block;
 						block = 0;
 					}
-					if (_enemy_selected._health < 0)
+					if (_enemy_selected._health < 1)
 					{
 						instance_destroy(_enemy_selected);
 					}
@@ -156,7 +160,10 @@ function Room(_levelno) constructor
 		turns_left = _turns_left;
 		
 		if (0 == instance_number(enemy_obj))
+		{
 			game_state = _GAME_STATE_VICTORY;
+			end_game();
+		}
 		
 		show_debug_message(turns_left);
 	}
@@ -192,7 +199,7 @@ function Room(_levelno) constructor
 				_health += __block;
 				block = 0;
 			}
-			if (_health < 0)
+			if (_health < 1)
 				_is_dead = true;
 		}
 		if (_is_dead)
@@ -204,6 +211,7 @@ function Room(_levelno) constructor
 	
 	static end_turn = function()
 	{
+		enemy_selected = noone;
 		with(card_obj)
 			instance_destroy(card_obj);
 		for (var _i=0;
@@ -216,7 +224,7 @@ function Room(_levelno) constructor
 		
 		do_intent();
 		if (_GAME_STATE_DEFEAT == game_state)
-			return noone;
+			end_game();
 		
 		with (all)
 			block = 0;
@@ -225,6 +233,15 @@ function Room(_levelno) constructor
 		
 		determine_intent();
 		take_cards();
+	}
+	
+	static end_game = function()
+	{
+		with (_player)
+			global.cur_player._health = _health;
+		layer_destroy_instances("Instances");
+		instance_create_layer(0, 0, "Instances", banner);
+		instance_create_layer(0, 0, "Instances", next_room_button);
 	}
 	
 	determine_intent();
