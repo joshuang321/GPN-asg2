@@ -1,8 +1,8 @@
 #macro _HEALTHBAR_WIDTH		180
 
-function drawhealthbar(cur_health, m_health, _x, _y, _s_width, _shield)
+function drawhealthbar(cur_health, m_health, _x, _y, _s_width, _block)
 {
-	var dif = (_s_width -_HEALTHBAR_WIDTH)/2
+	var dif = (_s_width -_HEALTHBAR_WIDTH)/2;
 	draw_healthbar(_x + dif, _y - 50, _x + _s_width - dif, _y -30, (cur_health/m_health) * 100,
 		#434f46, #ff1500,
 		#3cff00, 0,
@@ -10,6 +10,18 @@ function drawhealthbar(cur_health, m_health, _x, _y, _s_width, _shield)
 	draw_set_colour(#000000);
 	draw_text(_x + _s_width - dif + 15, _y - 50, string(cur_health));
 	draw_set_colour(#0000FF);
-	if (0 != _shield)
-		draw_text(_x - 17, _y - 50, string(_shield));
+	if (0 != _block)
+		draw_text(_x - 17, _y - 50, string(_block));
+}
+
+function draw_intent(_intent, _x, _y, _s_width, _attack)
+{
+	var _dif = _x + _s_width/2;
+	switch (_intent)
+	{
+		case _CARD_ATK:
+			draw_set_colour(#FF0000);
+			draw_text(_dif, _y -70, string(_attack));
+			break;
+	}
 }

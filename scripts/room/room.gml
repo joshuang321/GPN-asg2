@@ -29,7 +29,10 @@ function Room(_levelno) constructor
 					{
 						_health : global._level[_i].enemy[_j].health,
 						maxhealth : global._level[_i].enemy[_j].health,
-						_id : global._level[_i].enemy[_j].id
+						_id : global._level[_i].enemy[_j].id,
+						_attack : global._level[_i].enemy[_j].attack,
+						_block : global._level[_i].enemy[_j].block,
+						attack_block_prob : global._level[_i].enemy[_j].attack_block_prob
 					});
 				_x -= 288;
 			}
@@ -56,8 +59,23 @@ function Room(_levelno) constructor
 			_id : global.cur_player.cards[| _i]._id
 		});
 	chosen = array_create(4);
-	
 	pending = ds_list_create();
+	
+	static determine_intent = function()
+	{
+		for (var i = 0; i < instance_number(enemy_obj); ++i;)
+		{
+		   var __enemy = instance_find(enemy_obj ,i);
+		   var _prob = random(1.0);
+		   with (__enemy)
+		   {
+			   intent = _prob > attack_block_prob ? _CARD_ATK :
+				_CARD_BLK;
+				if (_CARD_BLK == intent)
+					block += _block;
+		   }
+		}
+	}
 	
 	static take_cards = function()
 	{
@@ -107,9 +125,17 @@ function Room(_levelno) constructor
 			{
 				with (_enemy_selected)
 				{
-					_enemy_selected._health -= 3;
+					var __block = block;
+					__block -= 3;
+					if (__block < 1)
+					{
+						_enemy_selected._health += __block;
+						block = 0;
+					}
 					if (_enemy_selected._health < 0)
+					{
 						instance_destroy(_enemy_selected);
+					}
 				}
 				instance_destroy(__id);
 				_enemy_selected = noone;
@@ -128,7 +154,52 @@ function Room(_levelno) constructor
 		}
 		enemy_selected = _enemy_selected;
 		turns_left = _turns_left;
+		
+		if (0 == instance_number(enemy_obj))
+			game_state = _GAME_STATE_VICTORY;
+		
 		show_debug_message(turns_left);
+	}
+	
+	static do_intent = function()
+	{
+		var _net_damage = 0;
+		for (var i = 0; i < instance_number(enemy_obj); ++i;)
+		{
+		    var __enemy = instance_find(enemy_obj, i);
+			with (__enemy)
+			{
+				switch (intent)
+				{
+					case _CARD_ATK:
+						_net_damage += _attack;
+						break;
+					
+					case _CARD_BLK:
+						block += _block;
+						break;
+				}
+			}
+		}
+		
+		with (_player)
+		{
+			var __block = block;
+			var _is_dead = false;
+			__block -= _net_damage;
+			if (__block < 1)
+			{
+				_health += __block;
+				block = 0;
+			}
+			if (_health < 0)
+				_is_dead = true;
+		}
+		if (_is_dead)
+		{
+			instance_destroy(_player);
+			game_state = _GAME_STATE_DEFEAT;
+		}
 	}
 	
 	static end_turn = function()
@@ -143,12 +214,20 @@ function Room(_levelno) constructor
 		game_state = _GAME_STATE_ENEMY;
 		// enemy attack here
 		
+		do_intent();
+		if (_GAME_STATE_DEFEAT == game_state)
+			return noone;
+		
 		with (all)
 			block = 0;
 		game_state = _GAME_STATE_PLAYER;
+		
+		
+		determine_intent();
 		take_cards();
 	}
 	
+	determine_intent();
 	take_cards();
 }
 

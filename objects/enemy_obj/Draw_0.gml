@@ -4,3 +4,6 @@ drawhealthbar(_health, maxhealth, x, y, sprite_width, block);
 if (id == global._room.enemy_selected)
 	draw_sprite_stretched(select_frame, 0, x, y, sprite_width,
 		sprite_height);
+
+if (variable_instance_exists(id, "intent"))
+	draw_intent(intent, x, y, sprite_width, _attack);

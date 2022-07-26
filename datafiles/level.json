@@ -2,15 +2,15 @@
     {
         "levelno" : 1,
             "enemy" : [
-            { "id" : 1, "health" : 30 }
+                { "id" : 1, "health" : 40, "attack" : 2, "block" : 1, "attack_block_prob" : 0.59 }
         ]
     },
 
     {
         "levelno" : 2,
         "enemy" : [
-            { "id" : 1, "health" : 40 },
-            { "id" : 1, "health" : 50 }
+            { "id" : 1, "health" : 40, "attack" : 2, "block" : 1, "attack_block_prob" : 0.79 },
+            { "id" : 1, "health" : 50, "attack" : 2, "block" : 1, "attack_block_prob" : 0.89 }
         ]
     }
 ]
