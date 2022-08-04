@@ -24,8 +24,8 @@
     },
 
     "_card" : [
-        { "id" : 1, "sprite" : "c_1" },
-        { "id" : 2, "sprite" : "c_2" }
+        { "id" : 1, "sprite" : "card_attack", "script" : "Attack", "data" : { "attack" : 3 }, "initial_cost" : 1, "step_cost" : 1 },
+        { "id" : 2, "sprite" : "card_block", "script" : "Block", "data" : { "block" : 2 }, "initial_cost" : 1, "step_cost" : 1 }
     ],
 
     "_enemy" : [

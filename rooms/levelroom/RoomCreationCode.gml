@@ -1,1 +1,1 @@
-global._room = new Room(1);
+NewLevel(global.Game.curLevel);

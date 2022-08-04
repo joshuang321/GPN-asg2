@@ -1,0 +1,131 @@
+{
+	"enemy_animate_delay": 5,
+
+	"starting_player": {
+		"init_health": 20,
+		"init_skillpt": 4,
+		"init_card": [
+			3, 3, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2
+		]
+	},
+
+	"card": [{
+		"card_id": 0,
+		"sprite": "cNotFound"
+	}, {
+		"card_id": 1,
+		"sprite": "cAttack",
+		"data": {
+			"init_dmg": 2,
+			"inc_step": 1
+		},
+		"card_cost" : {
+			"init" : 1,
+			"inc_step" : 1
+		}
+	}, {
+		"card_id": 2,
+		"sprite": "cBlock",
+		"data": {
+			"init_block": 2,
+			"inc_step": 1
+		},
+		"card_cost" : {
+			"init" : 1,
+			"inc_step" : 1
+		}
+	}, {
+		"card_id": 3,
+		"sprite": "cHeal",
+		"data": {
+			"init_heal": 2,
+			"inc_step": 1
+		},
+		"card_cost" : {
+			"init" : 1,
+			"inc_step" : 1
+		}
+	}, {
+		"id": 4,
+		"sprite": "cWeaken",
+		"data": {
+			"init_percent_weaken": 0.19,
+			"inc_step": 0.03,
+			"init_turn": 3
+		},
+		"card_cost" : {
+			"init" : 1,
+			"inc_step" : 1
+		}
+	}, {
+		"card_id": 5,
+		"sprite": "cExhaust",
+		"data": {
+			"init_percent_exhaust": 0.17,
+			"inc_step": 0.03,
+			"init_turn": 3
+		},
+		"card_cost" : {
+			"init" : 1,
+			"inc_step" : 1
+		}
+	}, {
+		"card_id": 6,
+		"sprite": "cFirstStrike",
+		"data": {
+			"init_percent_dmg": 1.22,
+			"inc_step": 0.02
+		}
+	}, {
+		"card_id": 7,
+		"sprite": "cDesperateAttack",
+		"data": {
+			"health_offset": 10,
+			"init_percent_dmg": 1.22,
+			"inc_step": 0.025
+		},
+		"card_cost" : {
+			"init" : 1,
+			"inc_step" : 1
+		}
+	}],
+	"enemy": [{
+		"id": 1,
+		"obj" : "eEnemy",
+		"sprite": "seEnemy",
+		"data" : {
+			"attack_prob_max" : 0.84,
+			"attack_prob_min" : 0.76,
+			"dmg" : 3
+		}
+	}, {
+		"id": 2,
+		"obj" : "eBoss",
+		"sprite": "seBoss",
+		"data" : {
+			"attack_prob_max" : 0.96,
+			"attack_prob_min" : 0.86,
+			"buff_at" : 0.5
+		}
+	}],
+	"intent": [{
+		"id": 1,
+		"name": "Buff",
+		"Aname": "Buffed!"
+	}, {
+		"id": 2,
+		"name": "Deflect",
+		"Aname": "Deflected!"
+	}],
+	"effect": [{
+			"id": 1,
+			"name": "Weakened",
+			"sprite": "cWeaken"
+		},
+		{
+			"id": 2,
+			"name": "Exhausted",
+			"sprite": "cExhaust"
+		}
+	]
+}
