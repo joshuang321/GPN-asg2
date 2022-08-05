@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "_pauseButton",
-    "path": "sprites/_pauseButton/_pauseButton.yy",
+    "name": "stopButton",
+    "path": "sprites/stopButton/stopButton.yy",
   },
   "solid": false,
   "visible": true,
@@ -25,12 +25,14 @@
     {"isDnD":false,"eventNum":4,"eventType":6,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":7,"eventType":6,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":11,"eventType":6,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":64,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "UI",
-    "path": "folders/Objects/UI.yy",
+    "name": "Menu",
+    "path": "folders/Objects/UI/Menu.yy",
   },
   "resourceVersion": "1.0",
   "name": "pauseButton",

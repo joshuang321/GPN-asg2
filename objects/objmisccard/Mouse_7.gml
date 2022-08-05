@@ -11,7 +11,7 @@ if (useCard())
 			{
 				audio_play_sound(playerHeal, 0, false);
 				startAnimation(player_heal);
-				curhealth = min(curhealth + _heal, maxhealth);
+				healHealth(_heal);
 			}
 			instance_destroy(id);
 			break;

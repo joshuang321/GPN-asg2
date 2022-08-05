@@ -1,1 +1,1 @@
-sprite_index = _pauseButton;
+pressed = false;

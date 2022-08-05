@@ -7,9 +7,10 @@ if (variable_struct_exists(global.Game.level, "enemySelected") &&
 		level : 0) * data.inc_step;
 	with (global.Game.level.enemySelected)
 	{
+		audio_play_sound(playerSlash, 0, false);
 		startAnimation(player_slash);
 		dealDamage(_dmg);
 	}
-	audio_play_sound(playerSlash, 0, false);
+	global.Game.level.enemySelected = noone;
 	instance_destroy(id);
 }

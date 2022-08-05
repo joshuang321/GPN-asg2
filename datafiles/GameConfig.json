@@ -1,5 +1,5 @@
 {
-	"enemy_animate_delay": 5,
+	"enemy_animate_delay": 2.2,
 
 	"starting_player": {
 		"init_health": 20,
@@ -16,7 +16,7 @@
 		"card_id": 1,
 		"sprite": "cAttack",
 		"data": {
-			"init_dmg": 2,
+			"init_dmg": 5,
 			"inc_step": 1
 		},
 		"card_cost" : {
@@ -42,7 +42,7 @@
 			"inc_step": 1
 		},
 		"card_cost" : {
-			"init" : 1,
+			"init" : 2,
 			"inc_step" : 1
 		}
 	}, {
@@ -105,15 +105,21 @@
 		"data" : {
 			"attack_prob_max" : 0.96,
 			"attack_prob_min" : 0.86,
-			"buff_at" : 0.5
+			"buff_at" : 0.5,
+			"dmg" : 5
 		}
 	}],
 	"intent": [{
-		"id": 1,
+		"id" : 1,
+		"sprite" : "cAttack",
+		"name" : "Attack",
+		"Aname" : "Attacked!"
+	}, {
+		"id": 2,
 		"name": "Buff",
 		"Aname": "Buffed!"
 	}, {
-		"id": 2,
+		"id": 3,
 		"name": "Deflect",
 		"Aname": "Deflected!"
 	}],
@@ -127,5 +133,18 @@
 			"name": "Exhausted",
 			"sprite": "cExhaust"
 		}
-	]
+	],
+	"background" : [{
+		"id" : 1,
+		"sprite" : "NormalStage1"
+	}, {
+		"id" : 2,
+		"sprite" : "BossStage1"
+	}, {
+		"id" : 3,
+		"sprite" : "NormalStage2"
+	}, {
+		"id" : 4,
+		"sprite" : "NormalStage2"
+	}]
 }

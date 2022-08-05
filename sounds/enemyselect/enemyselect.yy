@@ -11,8 +11,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "enemyselect.mp3",
-  "duration": 0.444062,
+  "soundFile": "enemyselect.ogg",
+  "duration": 2.0,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

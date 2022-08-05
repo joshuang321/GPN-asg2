@@ -1,10 +1,7 @@
 #macro CARD_Y_OFFSET 55
-function drawCard()
+
+function drawPressed()
 {
-	var _sprite_asset = asset_get_index(sprite);
-	var _sprite_info = sprite_get_info(_sprite_asset);
-	draw_sprite(_sprite_asset, 0, x + sprite_width/2 - _sprite_info.width/2,
-		y+ sprite_height/2 - _sprite_info.height/2 -CARD_Y_OFFSET);
 	if (pressed)
 	{	
 		draw_set_alpha(0.3);
@@ -15,14 +12,20 @@ function drawCard()
 	}
 }
 
+function drawCard()
+{
+	var _sprite_asset = asset_get_index(sprite);
+	var _sprite_info = sprite_get_info(_sprite_asset);
+	draw_sprite(_sprite_asset, 0, x + sprite_width/2 - _sprite_info.width/2,
+		y+ sprite_height/2 - _sprite_info.height/2 -CARD_Y_OFFSET);
+	drawPressed();
+}
+
 function drawCardNumber(_number)
 {
 	draw_set_font(global.uiSmallFont);
 	draw_set_color(#000000);
 	draw_text(x + X_NUM_OFFSET + 3, y + Y_NUM_OFFSET + 2,
-		_number);
-	draw_set_color(#FFFFFF);
-	draw_text(x + X_NUM_OFFSET + 5, y + Y_NUM_OFFSET + 2,
 		_number);
 }
 
@@ -33,8 +36,6 @@ function drawCardCost()
 	draw_set_font(global.uiSmallFont);
 	draw_set_color(#000000);
 	draw_text(x + sprite_width - X_NUM_OFFSET - 10, y + Y_NUM_OFFSET, _cardCost);
-	draw_set_color(#FFFFFF);
-	draw_text(x + sprite_width - X_NUM_OFFSET - 12, y + Y_NUM_OFFSET, _cardCost);
 }
 
 #macro _HEALTHBAR_WIDTH		180
@@ -42,31 +43,39 @@ function drawCardCost()
 function drawhealthbar(cur_health, m_health, _x, _y, _s_width, _block)
 {
 	var dif = (_s_width -_HEALTHBAR_WIDTH)/2;
-	draw_healthbar(_x + dif, _y - 50, _x + _s_width - dif, _y -30, (cur_health/m_health) * 100,
+	draw_healthbar(_x + dif, _y - 30, _x + _s_width - dif, _y -10, (cur_health/m_health) * 100,
 		#434f46, #ff1500,
 		#3cff00, 0,
 		true, true);
 	draw_set_colour(#FFFFFF);
 	draw_set_font(global.uiVerySmallFont);
+	_y -= 35;
 	if (0 != _block)
 	{
-		draw_sprite_stretched(cBlock, 0, _x -19, _y - 53, 30, 30);
-		draw_text(_x - 8, _y - 50, string(_block));
+		draw_sprite_stretched(cBlock, 0, _x -19, _y, 30, 30);
+		draw_text(_x - 8, _y +3, string(_block));
 	}
-	_x += _s_width - dif + 15;
-	_y -= 50;
+	_x += _s_width - dif + 12;
 	draw_sprite(heart, 0, _x, _y);
-	draw_text(_x + 7, _y +3, string(cur_health));
+	draw_text(_x + 6, _y +3, string(cur_health));
 }
+
+#macro FLOAT_MAG		10
+#macro SPACING			(2 * FLOAT_MAG + 75)
 
 function drawSelected()
 {
-	if (variable_struct_exists(global.Game.level, "enemySelected") &&
+	if (variable_instance_exists(id, "time") &&
 		id == global.Game.level.enemySelected)
 	{
-		draw_sprite_stretched(select_frame, 0, x, y,
-			sprite_width, sprite_height);
+		var _spriteSelectInfo = sprite_get_info(senemySelect);
+		var _channel = animcurve_get_channel(floatingSelectAnimation, 0);		
+		time = (time + 0.01) mod 1;
+		var _y = y - SPACING  - animcurve_channel_evaluate(_channel, time)
+			* FLOAT_MAG;
+		draw_sprite(senemySelect, 0, x + sprite_width/2 - _spriteSelectInfo.width/2, _y);
 	}
+	
 }
 
 function drawAnimation()

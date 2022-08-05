@@ -2,13 +2,17 @@
 
 function loadGame()
 {
-	global.uiFont = font_add("EvilEmpire-4BBVK.ttf", 72,
+	global.uiFont = font_add("DampfPlatzsh.ttf", 72,
 		false, false, 32, 128);
 	draw_set_font(global.uiFont);
-	global.uiSmallFont = font_add("EvilEmpire-4BBVK.ttf", 24,
+	global.uiSmallFont = font_add("DampfPlatzsh.ttf", 24,
 		false, false, 32, 128);
-	global.uiVerySmallFont = font_add("EvilEmpire-4BBVK.ttf", 14,
+	global.uiVerySmallFont = font_add("DampfPlatzsh.ttf", 14,
 		false, false, 32, 128);
+		
+	global.blockFont = font_add_sprite(blockFont, ord("0"), true, 2);
+	global.damageFont = font_add_sprite(damageFont, ord("0"), true, 2);
+	global.healFont = font_add_sprite(healFont, ord("0"), true, 2);
 	
 	global.GameConfig = load_json_data("GameConfig.json",
 		"Failed to load Game Config!",
@@ -135,11 +139,6 @@ function findEnemyFromId(_enemy_id)
 		if (_enemy_id ==global.GameConfig.enemy[_i].id)
 			return global.GameConfig.enemy[_i];
 	return noone;
-} 
-
-function loadSaved(_saveFilename)
-{
-
 }
 
 function loadNew()
@@ -165,8 +164,4 @@ function load_json_data(_filename, _load_fails_dmessage,
 		show_debug_message(_file_dnexists_dmessage);
 	}
 	return noone;
-}
-
-function addCardToPending(_id)
-{
 }

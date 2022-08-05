@@ -1,1 +1,1 @@
-sprite_index = endTurnButtonClicked;
+pressed = true;

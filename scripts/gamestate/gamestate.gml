@@ -4,6 +4,9 @@
 #macro _GAMESTATE_ENEMY			3
 #macro _GAMESTATE_ENEMY_END		4
 
+#macro _GAMESTATE_DEFEAT		5
+#macro _GAMESTATE_VICTORY		6
+
 function startNewGameState(_gameState)
 {
 
@@ -12,6 +15,7 @@ function startNewGameState(_gameState)
 	switch (_gameState)
 	{
 		case _GAMESTATE_DRAW:
+			audio_play_sound(cardDrawing, 0, false);
 			with (global.Game.level.playerInst)
 				block = 0;
 				
@@ -55,6 +59,11 @@ function startNewGameState(_gameState)
 				
 		case _GAMESTATE_PLAYER_END:
 			layer_set_visible("Menu", false);
+			
+			instance_deactivate_object(inst_14642C0E);
+			instance_deactivate_object(inst_68DD3F95);
+			instance_deactivate_object(inst_36C961E6);
+			
 			global.Game.level.enemySelected  = noone;
 			
 			with (objAttackCard)
@@ -79,14 +88,27 @@ function startNewGameState(_gameState)
 				_i++)
 				with (global.Game.level.enemies[|_i])
 					alarm[0] = (_i * global.GameConfig.enemy_animate_delay + 2) * _GAME_FPS;
-			with (inst_2CBE477C)
+			show_debug_message(ds_list_size(global.Game.level.enemies));
+			with (inst_6F2A37EA)
 				alarm[0] = ((ds_list_size(global.Game.level.enemies) -1) *
 					global.GameConfig.enemy_animate_delay + 4) * _GAME_FPS;
 			break;
 				
 		case _GAMESTATE_ENEMY_END:
+			layer_set_visible("Menu", true);
+			instance_activate_layer("Menu");
 			global.Game.level.player_skillpts = global.Game.player_skillpts;
 			startNewGameState(_GAMESTATE_DRAW);
+			break;
+			
+		case _GAMESTATE_VICTORY:
+			layer_destroy_instances("Instances");
+			layer_set_visible("Menu", false);
+			instance_deactivate_layer("Menu");
+			break;
+			
+			
+		case _GAMESTATE_DEFEAT:
 			break;
 			
 		default:
@@ -125,11 +147,11 @@ function checkEffect(_id, _effect_id)
 		_i<ds_list_size(Effects);
 		_i++)
 		{
-			if (_effectid == Effects[| _i])
+			if (_effect_id == Effects[| _i])
 				return true;
 		}
 	}
-	return true;
+	return false;
 }
 
 function addEffect(_id, _effectName)
