@@ -10,5 +10,49 @@
                 "health" : 15
             }
         ]
+    }, {
+        "background_id" : 1,
+        "enemies" : [
+            {
+                "id" : 1,
+                "health" : 15
+            }, {
+                "id" : 2,
+                "health" : 15
+            }
+        ]
+    }, {
+        "background_id" : 1,
+        "enemies" : [
+            {
+                "id" : 1,
+                "health" : 15
+            }, {
+                "id" : 2,
+                "health" : 15
+            }
+        ]
+    }, {
+        "background_id" : 1,
+        "enemies" : [
+            {
+                "id" : 1,
+                "health" : 15
+            }, {
+                "id" : 2,
+                "health" : 15
+            }
+        ]
+    }, {
+        "background_id" : 2,
+        "enemies" : [
+            {
+                "id" : 1,
+                "health" : 15
+            }, {
+                "id" : 2,
+                "health" : 15
+            }
+        ]
     }
 ]

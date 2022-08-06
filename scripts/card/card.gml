@@ -4,13 +4,18 @@
 function cardInit()
 {
 	pressed = false;
-	time = 0;
-	channel = animcurve_get_channel(cardAnimation, 0);
+	if (Animate)
+	{
+		time = 0;
+		channel = animcurve_get_channel(cardAnimation, 0);
+	}
 }
 
 function nextStep()
 {
-	if (time <= 1)
+	
+	if (Animate &&
+		time <= 1)
 	{
 		time += _CARD_SP;
 		y = ystart + animcurve_channel_evaluate(channel, time) *

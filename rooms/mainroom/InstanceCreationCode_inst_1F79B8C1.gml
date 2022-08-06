@@ -1,0 +1,1 @@
+menu_string = "Continue Game";

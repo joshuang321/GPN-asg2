@@ -26,8 +26,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "UI",
-    "path": "folders/Objects/UI.yy",
+    "name": "Level",
+    "path": "folders/Objects/UI/Menu/Level.yy",
   },
   "resourceVersion": "1.0",
   "name": "floatingFont",

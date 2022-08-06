@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "_cardDeck",
-    "path": "sprites/_cardDeck/_cardDeck.yy",
+    "name": "sCardDeck",
+    "path": "sprites/sCardDeck/sCardDeck.yy",
   },
   "solid": false,
   "visible": true,
@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Menu",
-    "path": "folders/Objects/UI/Menu.yy",
+    "name": "Level",
+    "path": "folders/Objects/UI/Menu/Level.yy",
   },
   "resourceVersion": "1.0",
   "name": "cardDeck",

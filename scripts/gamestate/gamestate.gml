@@ -32,6 +32,8 @@ function startNewGameState(_gameState)
 				_i<array_length(global.Game.level.cardArray);
 				_i++)
 			{
+				global.Game.level.cardArray[_i].Animate = true;
+				
 				switch (global.Game.level.cardArray[_i].card_id)
 				{
 					case 1:
@@ -102,9 +104,11 @@ function startNewGameState(_gameState)
 			break;
 			
 		case _GAMESTATE_VICTORY:
-			layer_destroy_instances("Instances");
 			layer_set_visible("Menu", false);
 			instance_deactivate_layer("Menu");
+			destroyAllCards();
+			with (global.Game.level.playerInst)
+				alarm[0] = 3 * _GAME_FPS;
 			break;
 			
 			
@@ -161,4 +165,14 @@ function addEffect(_id, _effectName)
 		with(_id)
 			ds_list_add(Effects, _efx);
 	});
+}
+
+function destroyAllCards()
+{
+	with (objAttackCard)
+				instance_destroy(id);
+	with (objBlockCard)
+		instance_destroy(id);
+	with (objMiscCard)
+		instance_destroy(id);
 }

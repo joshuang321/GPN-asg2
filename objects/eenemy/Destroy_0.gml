@@ -1,1 +1,1 @@
-entityDestroy();
+enemyDestroy();

@@ -31,8 +31,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Menu",
-    "path": "folders/Objects/UI/Menu.yy",
+    "name": "Map",
+    "path": "folders/Objects/UI/Menu/Map.yy",
   },
   "resourceVersion": "1.0",
   "name": "Anchor",

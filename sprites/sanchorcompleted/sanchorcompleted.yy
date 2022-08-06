@@ -7,15 +7,15 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 7,
-  "bbox_right": 85,
+  "bbox_left": 0,
+  "bbox_right": 31,
   "bbox_top": 0,
-  "bbox_bottom": 91,
+  "bbox_bottom": 31,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 92,
-  "height": 92,
+  "width": 32,
+  "height": 32,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"913ff0f8-11bc-473b-afc2-6030a131d887","path":"sprites/_cardDeck/_cardDeck.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"913ff0f8-11bc-473b-afc2-6030a131d887","path":"sprites/_cardDeck/_cardDeck.yy",},"LayerId":{"name":"95317fc7-4965-43ac-87f3-a66d22021c91","path":"sprites/_cardDeck/_cardDeck.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"_cardDeck","path":"sprites/_cardDeck/_cardDeck.yy",},"resourceVersion":"1.0","name":"913ff0f8-11bc-473b-afc2-6030a131d887","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"ff0f1244-9c87-4f8d-921f-5cb9dfb5315e","path":"sprites/sAnchorCompleted/sAnchorCompleted.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"ff0f1244-9c87-4f8d-921f-5cb9dfb5315e","path":"sprites/sAnchorCompleted/sAnchorCompleted.yy",},"LayerId":{"name":"298326ea-7c39-48c1-a28f-068d011ab650","path":"sprites/sAnchorCompleted/sAnchorCompleted.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sAnchorCompleted","path":"sprites/sAnchorCompleted/sAnchorCompleted.yy",},"resourceVersion":"1.0","name":"ff0f1244-9c87-4f8d-921f-5cb9dfb5315e","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"_cardDeck","path":"sprites/_cardDeck/_cardDeck.yy",},
+    "spriteId": {"name":"sAnchorCompleted","path":"sprites/sAnchorCompleted/sAnchorCompleted.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"4fff0b8d-53d9-4609-bde5-e6c40ca5fe69","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"913ff0f8-11bc-473b-afc2-6030a131d887","path":"sprites/_cardDeck/_cardDeck.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"69541064-de5e-4620-b971-6d7fcf1b4a03","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ff0f1244-9c87-4f8d-921f-5cb9dfb5315e","path":"sprites/sAnchorCompleted/sAnchorCompleted.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,14 +58,14 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"_cardDeck","path":"sprites/_cardDeck/_cardDeck.yy",},
+    "parent": {"name":"sAnchorCompleted","path":"sprites/sAnchorCompleted/sAnchorCompleted.yy",},
     "resourceVersion": "1.4",
-    "name": "_cardDeck",
+    "name": "sAnchorCompleted",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"95317fc7-4965-43ac-87f3-a66d22021c91","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"298326ea-7c39-48c1-a28f-068d011ab650","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/UI.yy",
   },
   "resourceVersion": "1.0",
-  "name": "_cardDeck",
+  "name": "sAnchorCompleted",
   "tags": [],
   "resourceType": "GMSprite",
 }

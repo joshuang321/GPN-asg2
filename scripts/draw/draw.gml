@@ -68,12 +68,12 @@ function drawSelected()
 	if (variable_instance_exists(id, "time") &&
 		id == global.Game.level.enemySelected)
 	{
-		var _spriteSelectInfo = sprite_get_info(senemySelect);
+		var _spriteSelectInfo = sprite_get_info(sEnemySelect);
 		var _channel = animcurve_get_channel(floatingSelectAnimation, 0);		
 		time = (time + 0.01) mod 1;
 		var _y = y - SPACING  - animcurve_channel_evaluate(_channel, time)
 			* FLOAT_MAG;
-		draw_sprite(senemySelect, 0, x + sprite_width/2 - _spriteSelectInfo.width/2, _y);
+		draw_sprite(sEnemySelect, 0, x + sprite_width/2 - _spriteSelectInfo.width/2, _y);
 	}
 	
 }
@@ -104,3 +104,19 @@ function startAnimation(_animated_sprite_index)
 	image_index = 0;
 	animated_sprite_index = _animated_sprite_index;
 }
+
+function drawMainMenuButton()
+{
+	draw_set_font(global.uiSmallFont);
+	draw_text(x + sprite_width/2 - string_width(menu_string)/2, y, menu_string);
+}
+
+#macro MAP_MENU_Y_GAP	10
+function drawMapMenuButton()
+{
+	draw_set_color(#F6BE00);
+	draw_set_font(global.uiSmallFont);
+	draw_text(x + sprite_width/2 - string_width(menu_string)/2,
+		y + sprite_height + MAP_MENU_Y_GAP, menu_string);
+}
+	

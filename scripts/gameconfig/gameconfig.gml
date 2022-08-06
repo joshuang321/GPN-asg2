@@ -28,6 +28,28 @@ function loadGame()
 		
 }
 
+function GameEnemy(_enemyData, _enemyHealth) constructor
+{
+	data = _enemyData;
+	maxhealth = _enemyHealth;
+	curhealth = _enemyHealth;
+}
+
+function GameCard(_Card) constructor
+{
+	card_id = _Card.card_id;
+	sprite = _Card.sprite;
+	data = _Card.data;
+	card_cost = _Card.card_cost;
+	level = 0;
+}
+
+function GamePlayer(_playerHealth) constructor
+{
+	maxhealth = _playerHealth;
+	curhealth = _playerHealth;
+}
+
 function Level() constructor
 {
 	player_skillpts = global.Game.player_skillpts;
@@ -38,26 +60,20 @@ function Level() constructor
 	ds_list_shuffle(global.Game.player_card);
 	
 	playerInst = instance_create_layer(118, room_height -592,
-		"Instances",
-		ePlayer,
-		{
-			maxhealth : global.Game.player_health,
-			curhealth : global.Game.player_health
-		});
+		"Instances", ePlayer,
+		new GamePlayer(global.Game.player_health));
 	
 	for (var _i=0;
 		_i<ds_list_size(global.Game.player_card);
 		_i++)
-	{
 		ds_stack_push(player_stack, global.Game.player_card[|_i]);
-	}
 	
 	
 	player_pending_list = ds_list_create();
 	enemies = ds_list_create();
 }
 
-function Game() constructor
+function cGame() constructor
 {
 	player_health = global.GameConfig.starting_player.init_health;
 	player_skillpts = global.GameConfig.starting_player.init_skillpt;
@@ -66,7 +82,10 @@ function Game() constructor
 	for (var _i=0;
 		_i<array_length(global.GameConfig.starting_player.init_card);
 		_i++)
-		ds_list_add(player_card, findCardFromId(global.GameConfig.starting_player.init_card[_i]));
+	{
+		var _card = findCardFromId(global.GameConfig.starting_player.init_card[_i]);
+		ds_list_add(player_card, new GameCard(_card));
+	}
 	
 	player_gold = 0;
 	curLevel = 0;
@@ -91,11 +110,7 @@ function NewLevel(_levelNo)
 		_x -= _spriteInfo.width;
 		ds_list_add(global.Game.level.enemies,
 			instance_create_layer(_x, _y, "Instances", asset_get_index(_enemy.obj),
-			{ 
-				data : _enemy.data,
-				maxhealth : _level.enemies[_i].health,
-				curhealth : _level.enemies[_i].health
-			}));
+				new GameEnemy(_enemy.data, _level.enemies[_i].health)));
 		_x -= 16;
 	}
 	startNewGameState(_GAMESTATE_DRAW);
@@ -143,7 +158,7 @@ function findEnemyFromId(_enemy_id)
 
 function loadNew()
 {
-	global.Game = new Game();
+	global.Game = new cGame();
 }
 
 function load_json_data(_filename, _load_fails_dmessage,

@@ -46,7 +46,7 @@
 			"inc_step" : 1
 		}
 	}, {
-		"id": 4,
+		"card_id": 4,
 		"sprite": "cWeaken",
 		"data": {
 			"init_percent_weaken": 0.19,
