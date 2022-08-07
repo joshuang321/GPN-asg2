@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "MiscCard",
-    "path": "sprites/MiscCard/MiscCard.yy",
+    "name": "AttackCard",
+    "path": "sprites/AttackCard/AttackCard.yy",
   },
   "solid": false,
   "visible": true,

@@ -1,5 +1,6 @@
 function entityInit()
 {
+	y -= sprite_height;
 	Effects = ds_list_create();
 	block = 0;
 }

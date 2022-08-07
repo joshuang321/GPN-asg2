@@ -73,6 +73,8 @@ function GamePlayer(_playerHealth) constructor
 	curhealth = _playerHealth;
 }
 
+#macro Y_STANDING	500
+
 function Level() constructor
 {
 	player_skillpts = global.Game.player_skillpts;
@@ -82,7 +84,7 @@ function Level() constructor
 	randomize();
 	ds_list_shuffle(global.Game.player_card);
 	
-	playerInst = instance_create_layer(118, room_height -592,
+	playerInst = instance_create_layer(118, Y_STANDING,
 		"Instances", ePlayer,
 		new GamePlayer(global.Game.player_health));
 	
@@ -112,7 +114,7 @@ function cGame() constructor
 	}
 	
 	player_gold = 0;
-	curLevel = 6;
+	curLevel = 19;
 }
 
 function NewLevel(_levelNo)
@@ -122,7 +124,7 @@ function NewLevel(_levelNo)
 	var _level = getLevel(_levelNo);
 	
 	var _x = room_width - 98;
-	var _y = room_height - 592;		
+	var _y = Y_STANDING;		
 	for (var _i =0;
 			_i<array_length(_level.enemies);
 			_i++)

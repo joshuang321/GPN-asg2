@@ -3,7 +3,7 @@
   "option_windows_executable_name": "Fanolia Tale.exe",
   "option_windows_version": "1.0.0.0",
   "option_windows_company_info": "ICT GPN 2022",
-  "option_windows_product_info": "Fonolia Tale",
+  "option_windows_product_info": "Tales of Fanolia",
   "option_windows_copyright_info": "Xie Ziqi and Joshua Ng",
   "option_windows_description_info": "A Tale of a Lengendary Hero to save Fanolia from the Demon Lord.",
   "option_windows_display_cursor": true,

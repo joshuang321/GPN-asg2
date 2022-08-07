@@ -115,11 +115,11 @@ function drawMainMenuButton()
 }
 
 #macro MAP_MENU_Y_GAP	10
+
 function drawMapMenuButton()
 {
 	draw_set_color(#F6BE00);
 	draw_set_font(global.uiSmallFont);
 	draw_text(x + sprite_width/2 - string_width(menu_string)/2,
 		y + sprite_height + MAP_MENU_Y_GAP, menu_string);
-}
-	
+}	
