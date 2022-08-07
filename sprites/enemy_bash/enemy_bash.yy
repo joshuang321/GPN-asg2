@@ -105,8 +105,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Abilities",
-    "path": "folders/Sprites/Abilities.yy",
+    "name": "Stage1",
+    "path": "folders/Sprites/Abilities/Enemy/Stage1.yy",
   },
   "resourceVersion": "1.0",
   "name": "enemy_bash",

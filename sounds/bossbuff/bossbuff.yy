@@ -1,7 +1,7 @@
 {
   "conversionMode": 0,
   "compression": 0,
-  "volume": 0.31,
+  "volume": 1.0,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -11,14 +11,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "sfxnormalstage1.ogg",
-  "duration": 71.272766,
+  "soundFile": "bossbuff.ogg",
+  "duration": 0.741882,
   "parent": {
     "name": "Stage1",
-    "path": "folders/Sounds/Stages/Stage1.yy",
+    "path": "folders/Sounds/Enemy/Stage1.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sfxNormalStage1",
+  "name": "bossBuff",
   "tags": [],
   "resourceType": "GMSound",
 }
