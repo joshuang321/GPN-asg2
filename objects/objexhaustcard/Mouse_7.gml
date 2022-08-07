@@ -8,12 +8,9 @@ if (noone != global.Game.level.enemySelected &&
 	var _turns = data.turns;
 	with (global.Game.level.enemySelected)
 	{
+		audio_play_sound(playerExhaust, 0, false);
 		addEffect("Exhausted", { amt : _exhaust_percent,
 			turns : _turns });
-		for (var _i=0;
-			_i<ds_list_size(Effects);
-			_i++)
-			show_debug_message(Effects[| _i]);
 			
 	}
 	instance_destroy(id);

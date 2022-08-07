@@ -14,8 +14,8 @@
   "soundFile": "sfxnormalstage1.ogg",
   "duration": 71.272766,
   "parent": {
-    "name": "Stages",
-    "path": "folders/Sounds/Stages.yy",
+    "name": "Stage1",
+    "path": "folders/Sounds/Stages/Stage1.yy",
   },
   "resourceVersion": "1.0",
   "name": "sfxNormalStage1",

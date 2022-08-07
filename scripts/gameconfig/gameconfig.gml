@@ -112,7 +112,7 @@ function cGame() constructor
 	}
 	
 	player_gold = 0;
-	curLevel = 0;
+	curLevel = 6;
 }
 
 function NewLevel(_levelNo)

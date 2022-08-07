@@ -145,8 +145,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Abilities",
-    "path": "folders/Sprites/Abilities.yy",
+    "name": "Player",
+    "path": "folders/Sprites/Abilities/Player.yy",
   },
   "resourceVersion": "1.0",
   "name": "player_firststrike",

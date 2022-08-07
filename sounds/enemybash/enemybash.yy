@@ -14,8 +14,8 @@
   "soundFile": "enemybash.ogg",
   "duration": 0.409977,
   "parent": {
-    "name": "Enemy",
-    "path": "folders/Sounds/Enemy.yy",
+    "name": "Stage1",
+    "path": "folders/Sounds/Enemy/Stage1.yy",
   },
   "resourceVersion": "1.0",
   "name": "enemyBash",

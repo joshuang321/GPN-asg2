@@ -13,7 +13,7 @@ if (noone != global.Game.level.enemySelected &&
 	
 	with (global.Game.level.enemySelected)
 	{
-		audio_play_sound(playerSlash, 0, false);
+		audio_play_sound(playerFirstStrike, 0, false);
 		startAnimation(player_firststrike);
 		dealDamage(noone, _dmg);
 	}

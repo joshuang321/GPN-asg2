@@ -12,5 +12,5 @@ if (noone != global.Game.level.enemySelected)
 }
 
 draw_sprite_stretched(blooddrop, 0, x + 6, y + 4, 35, 35);
-drawCardNumber(_cardNumber);
+drawCardNumber(ceil(_cardNumber));
 drawCardCost();

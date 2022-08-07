@@ -14,8 +14,8 @@
   "soundFile": "sfxbossstage1.ogg",
   "duration": 85.32277,
   "parent": {
-    "name": "Stages",
-    "path": "folders/Sounds/Stages.yy",
+    "name": "Stage1",
+    "path": "folders/Sounds/Stages/Stage1.yy",
   },
   "resourceVersion": "1.0",
   "name": "sfxBossStage1",

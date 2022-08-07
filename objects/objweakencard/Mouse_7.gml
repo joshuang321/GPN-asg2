@@ -8,6 +8,7 @@ if (noone != global.Game.level.enemySelected &&
 	var _turns = data.turns;
 	with (global.Game.level.enemySelected)
 	{
+		audio_play_sound(playerWeakening, 0, false);
 		addEffect("Weakened", { amt : _weaken_percent,
 			turns : _turns });
 	}
