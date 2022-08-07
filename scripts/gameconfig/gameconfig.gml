@@ -1,4 +1,4 @@
-#macro _GAME_FPS 30
+#macro _GAME_FPS 50
 
 function load_json_data(_filename, _load_fails_dmessage,
 	_file_dnexists_dmessage, _global_var_str)

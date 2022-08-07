@@ -202,5 +202,6 @@
 		"id" : 4,
 		"sprite" : "BossStage2",
 		"bgm" : "sfxBossStage2"
-	}]
+	},
+]
 }
