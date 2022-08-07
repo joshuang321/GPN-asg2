@@ -82,9 +82,8 @@
 		"obj" : "objFirstStrikeCard",
 		"sprite": "cFirstStrike",
 		"data": {
-			"health_percent_offset" : 0.5,
-			"init_percent_dmg": 0.40,
-			"inc_step": 0.02
+			"init_dmg": 14,
+			"inc_step": 1
 		},
 		"card_cost" : {
 			"init" : 1,
@@ -96,9 +95,8 @@
 		"card_type" : 3,
 		"sprite": "cDesperateAttack",
 		"data": {
-			"health_percent_offset" : 0.5,
-			"init_percent_dmg": 0.40,
-			"inc_step": 0.025
+			"init_dmg": 14,
+			"inc_step": 1
 		},
 		"card_cost" : {
 			"init" : 1,
