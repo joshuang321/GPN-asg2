@@ -15,7 +15,7 @@
         "enemies" : [
             {
                 "id" : 1,
-                "health" : 35
+                "health" : 15
             }, {
                 "id" : 2,
                 "health" : 15
@@ -51,6 +51,61 @@
                 "health" : 15
             }, {
                 "id" : 2,
+                "health" : 15
+            }
+        ]
+    }, {
+        "background_id" : 3,
+        "enemies" : [
+            {
+                "id" : 3,
+                "health" : 15
+            }, {
+                "id" : 4,
+                "health" : 15
+            }
+        ]
+    }, {
+        "background_id" : 3,
+        "enemies" : [
+            {
+                "id" : 3,
+                "health" : 15
+            }, {
+                "id" : 4,
+                "health" : 15
+            }
+        ]
+    }, {
+        "background_id" : 3,
+        "enemies" : [
+            {
+                "id" : 3,
+                "health" : 15
+            }, {
+                "id" : 4,
+                "health" : 15
+            }
+        ]
+    }, {
+        "background_id" : 3,
+        "enemies" : [
+            {
+                "id" : 3,
+                "health" : 15
+            }, {
+                "id" : 4,
+                "health" : 15
+            }
+        ]
+    }, {
+        "background_id" : 4,
+        "enemies" : [
+            {
+                "id" : 3,
+                "health" : 15
+            }, {
+                "id" : 4,
                 "health" : 15
             }
         ]

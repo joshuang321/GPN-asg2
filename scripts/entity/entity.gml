@@ -68,6 +68,7 @@ function dealDamage(_self, _damage)
 			show_debug_message("Enemy Weakened!");
 		}
 	}
+	_damage = ceil(_damage);
 	if (block < _damage)
 	{
 		if (block > 0)

@@ -108,8 +108,8 @@
 
 	"enemy": [{
 		"id": 1,
-		"obj" : "eEnemy",
-		"sprite": "seEnemy",
+		"obj" : "eEnemy1",
+		"sprite": "Enemy1",
 		"data" : {
 			"attack_prob_max" : 0.84,
 			"attack_prob_min" : 0.76,
@@ -117,8 +117,28 @@
 		}
 	}, {
 		"id": 2,
-		"obj" : "eBoss",
-		"sprite": "seBoss",
+		"obj" : "eBoss1",
+		"sprite": "Boss1",
+		"data" : {
+			"attack_prob_max" : 0.96,
+			"attack_prob_min" : 0.86,
+			"buff_at" : 0.5,
+			"dmg" : 5
+		}
+	}, {
+		"id": 3,
+		"obj" : "eEnemy2",
+		"sprite": "Enemy2",
+		"data" : {
+			"attack_prob_max" : 0.96,
+			"attack_prob_min" : 0.86,
+			"buff_at" : 0.5,
+			"dmg" : 5
+		}
+	}, {
+		"id": 4,
+		"obj" : "eBoss2",
+		"sprite": "Boss2",
 		"data" : {
 			"attack_prob_max" : 0.96,
 			"attack_prob_min" : 0.86,
@@ -138,6 +158,16 @@
 		}
 	],
 
+	"stages" : [{
+		"gold" : 4
+	}, {
+		"gold" : 4
+	}, {
+		"gold" : 4
+	}, {
+		"gold" : 4
+	}],
+
 	"background" : [{
 		"id" : 1,
 		"sprite" : "NormalStage1",
@@ -148,9 +178,11 @@
 		"bgm" : "sfxBossStage1"
 	}, {
 		"id" : 3,
-		"sprite" : "NormalStage2"
+		"sprite" : "NormalStage2",
+		"bgm" : "sfxNormalStage2"
 	}, {
 		"id" : 4,
-		"sprite" : "NormalStage2"
+		"sprite" : "BossStage2",
+		"bgm" : "sfxBossStage2"
 	}]
 }

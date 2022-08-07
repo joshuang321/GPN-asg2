@@ -1,0 +1,175 @@
+{
+  "bboxMode": 0,
+  "collisionKind": 1,
+  "type": 0,
+  "origin": 0,
+  "preMultiplyAlpha": false,
+  "edgeFiltering": false,
+  "collisionTolerance": 0,
+  "swfPrecision": 2.525,
+  "bbox_left": 0,
+  "bbox_right": 93,
+  "bbox_top": 0,
+  "bbox_bottom": 92,
+  "HTile": false,
+  "VTile": false,
+  "For3D": false,
+  "width": 96,
+  "height": 96,
+  "textureGroupId": {
+    "name": "Default",
+    "path": "texturegroups/Default",
+  },
+  "swatchColours": null,
+  "gridX": 0,
+  "gridY": 0,
+  "frames": [
+    {"compositeImage":{"FrameId":{"name":"bbc58f4a-6798-40a4-b5da-0abd222896af","path":"sprites/mage_skill/mage_skill.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"bbc58f4a-6798-40a4-b5da-0abd222896af","path":"sprites/mage_skill/mage_skill.yy",},"LayerId":{"name":"5a95d698-e1db-4626-8d1a-8afb37812b64","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"mage_skill","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","name":"bbc58f4a-6798-40a4-b5da-0abd222896af","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"7db4ad65-53df-486b-90d8-532d5c37a3ff","path":"sprites/mage_skill/mage_skill.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"7db4ad65-53df-486b-90d8-532d5c37a3ff","path":"sprites/mage_skill/mage_skill.yy",},"LayerId":{"name":"5a95d698-e1db-4626-8d1a-8afb37812b64","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"mage_skill","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","name":"7db4ad65-53df-486b-90d8-532d5c37a3ff","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"365cdf2a-562b-4c94-b68f-b22b81130cb2","path":"sprites/mage_skill/mage_skill.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"365cdf2a-562b-4c94-b68f-b22b81130cb2","path":"sprites/mage_skill/mage_skill.yy",},"LayerId":{"name":"5a95d698-e1db-4626-8d1a-8afb37812b64","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"mage_skill","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","name":"365cdf2a-562b-4c94-b68f-b22b81130cb2","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"c9ae00db-41c8-4a2f-83fe-03dc8f9ade9a","path":"sprites/mage_skill/mage_skill.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"c9ae00db-41c8-4a2f-83fe-03dc8f9ade9a","path":"sprites/mage_skill/mage_skill.yy",},"LayerId":{"name":"5a95d698-e1db-4626-8d1a-8afb37812b64","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"mage_skill","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","name":"c9ae00db-41c8-4a2f-83fe-03dc8f9ade9a","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"156b5a1b-3742-4f28-b256-e8b62c21c157","path":"sprites/mage_skill/mage_skill.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"156b5a1b-3742-4f28-b256-e8b62c21c157","path":"sprites/mage_skill/mage_skill.yy",},"LayerId":{"name":"5a95d698-e1db-4626-8d1a-8afb37812b64","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"mage_skill","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","name":"156b5a1b-3742-4f28-b256-e8b62c21c157","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"a496d031-3bbf-4405-b883-6ce33cbe9899","path":"sprites/mage_skill/mage_skill.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"a496d031-3bbf-4405-b883-6ce33cbe9899","path":"sprites/mage_skill/mage_skill.yy",},"LayerId":{"name":"5a95d698-e1db-4626-8d1a-8afb37812b64","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"mage_skill","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","name":"a496d031-3bbf-4405-b883-6ce33cbe9899","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"b789db74-d4d7-449a-a61e-07e20df49e33","path":"sprites/mage_skill/mage_skill.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"b789db74-d4d7-449a-a61e-07e20df49e33","path":"sprites/mage_skill/mage_skill.yy",},"LayerId":{"name":"5a95d698-e1db-4626-8d1a-8afb37812b64","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"mage_skill","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","name":"b789db74-d4d7-449a-a61e-07e20df49e33","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"e87bb9e2-68aa-4655-ae7f-cf0d2a7a7706","path":"sprites/mage_skill/mage_skill.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"e87bb9e2-68aa-4655-ae7f-cf0d2a7a7706","path":"sprites/mage_skill/mage_skill.yy",},"LayerId":{"name":"5a95d698-e1db-4626-8d1a-8afb37812b64","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"mage_skill","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","name":"e87bb9e2-68aa-4655-ae7f-cf0d2a7a7706","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"218f741c-9799-42b2-9a3a-2209968cf178","path":"sprites/mage_skill/mage_skill.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"218f741c-9799-42b2-9a3a-2209968cf178","path":"sprites/mage_skill/mage_skill.yy",},"LayerId":{"name":"5a95d698-e1db-4626-8d1a-8afb37812b64","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"mage_skill","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","name":"218f741c-9799-42b2-9a3a-2209968cf178","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"8b46c9ae-8181-4a3d-ba4a-c3ca97df854e","path":"sprites/mage_skill/mage_skill.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"8b46c9ae-8181-4a3d-ba4a-c3ca97df854e","path":"sprites/mage_skill/mage_skill.yy",},"LayerId":{"name":"5a95d698-e1db-4626-8d1a-8afb37812b64","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"mage_skill","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","name":"8b46c9ae-8181-4a3d-ba4a-c3ca97df854e","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"f92ba14c-429e-4198-af7b-43f8835ac207","path":"sprites/mage_skill/mage_skill.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"f92ba14c-429e-4198-af7b-43f8835ac207","path":"sprites/mage_skill/mage_skill.yy",},"LayerId":{"name":"5a95d698-e1db-4626-8d1a-8afb37812b64","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"mage_skill","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","name":"f92ba14c-429e-4198-af7b-43f8835ac207","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"48dedf2f-e088-4dde-9cda-22401f4075f9","path":"sprites/mage_skill/mage_skill.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"48dedf2f-e088-4dde-9cda-22401f4075f9","path":"sprites/mage_skill/mage_skill.yy",},"LayerId":{"name":"5a95d698-e1db-4626-8d1a-8afb37812b64","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"mage_skill","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","name":"48dedf2f-e088-4dde-9cda-22401f4075f9","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"6f5ebeb6-c052-4826-bdc5-407cd3441fc1","path":"sprites/mage_skill/mage_skill.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"6f5ebeb6-c052-4826-bdc5-407cd3441fc1","path":"sprites/mage_skill/mage_skill.yy",},"LayerId":{"name":"5a95d698-e1db-4626-8d1a-8afb37812b64","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"mage_skill","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","name":"6f5ebeb6-c052-4826-bdc5-407cd3441fc1","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"a8324f63-6c7c-41bb-aa30-09b63e10ba2f","path":"sprites/mage_skill/mage_skill.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"a8324f63-6c7c-41bb-aa30-09b63e10ba2f","path":"sprites/mage_skill/mage_skill.yy",},"LayerId":{"name":"5a95d698-e1db-4626-8d1a-8afb37812b64","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"mage_skill","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","name":"a8324f63-6c7c-41bb-aa30-09b63e10ba2f","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"f4fc9561-a378-4433-943f-f79692e02980","path":"sprites/mage_skill/mage_skill.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"f4fc9561-a378-4433-943f-f79692e02980","path":"sprites/mage_skill/mage_skill.yy",},"LayerId":{"name":"5a95d698-e1db-4626-8d1a-8afb37812b64","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"mage_skill","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","name":"f4fc9561-a378-4433-943f-f79692e02980","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"904553a4-74d8-4231-bd20-5ba107f7034e","path":"sprites/mage_skill/mage_skill.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"904553a4-74d8-4231-bd20-5ba107f7034e","path":"sprites/mage_skill/mage_skill.yy",},"LayerId":{"name":"5a95d698-e1db-4626-8d1a-8afb37812b64","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"mage_skill","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","name":"904553a4-74d8-4231-bd20-5ba107f7034e","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"82defeb1-8d86-43fc-b026-8761919e9659","path":"sprites/mage_skill/mage_skill.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"82defeb1-8d86-43fc-b026-8761919e9659","path":"sprites/mage_skill/mage_skill.yy",},"LayerId":{"name":"5a95d698-e1db-4626-8d1a-8afb37812b64","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"mage_skill","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","name":"82defeb1-8d86-43fc-b026-8761919e9659","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"9ea5f2be-4ed4-4b05-a4bc-93bf5c97ebb1","path":"sprites/mage_skill/mage_skill.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"9ea5f2be-4ed4-4b05-a4bc-93bf5c97ebb1","path":"sprites/mage_skill/mage_skill.yy",},"LayerId":{"name":"5a95d698-e1db-4626-8d1a-8afb37812b64","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"mage_skill","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","name":"9ea5f2be-4ed4-4b05-a4bc-93bf5c97ebb1","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"30e0d5c7-eea4-4a48-ac9e-cef607f065f6","path":"sprites/mage_skill/mage_skill.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"30e0d5c7-eea4-4a48-ac9e-cef607f065f6","path":"sprites/mage_skill/mage_skill.yy",},"LayerId":{"name":"5a95d698-e1db-4626-8d1a-8afb37812b64","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"mage_skill","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","name":"30e0d5c7-eea4-4a48-ac9e-cef607f065f6","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"c3b9115a-e797-48e9-8e59-44fb88f70ccb","path":"sprites/mage_skill/mage_skill.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"c3b9115a-e797-48e9-8e59-44fb88f70ccb","path":"sprites/mage_skill/mage_skill.yy",},"LayerId":{"name":"5a95d698-e1db-4626-8d1a-8afb37812b64","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"mage_skill","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","name":"c3b9115a-e797-48e9-8e59-44fb88f70ccb","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"69602581-8b69-4d12-89c8-aa7de821cf15","path":"sprites/mage_skill/mage_skill.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"69602581-8b69-4d12-89c8-aa7de821cf15","path":"sprites/mage_skill/mage_skill.yy",},"LayerId":{"name":"5a95d698-e1db-4626-8d1a-8afb37812b64","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"mage_skill","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","name":"69602581-8b69-4d12-89c8-aa7de821cf15","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"75d8cca2-acd8-4ac2-826d-6533f298b1a7","path":"sprites/mage_skill/mage_skill.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"75d8cca2-acd8-4ac2-826d-6533f298b1a7","path":"sprites/mage_skill/mage_skill.yy",},"LayerId":{"name":"5a95d698-e1db-4626-8d1a-8afb37812b64","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"mage_skill","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","name":"75d8cca2-acd8-4ac2-826d-6533f298b1a7","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"5f3d771f-7137-45bd-a680-ccbbe789791e","path":"sprites/mage_skill/mage_skill.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"5f3d771f-7137-45bd-a680-ccbbe789791e","path":"sprites/mage_skill/mage_skill.yy",},"LayerId":{"name":"5a95d698-e1db-4626-8d1a-8afb37812b64","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"mage_skill","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","name":"5f3d771f-7137-45bd-a680-ccbbe789791e","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"2fa41646-94b0-441b-9c45-889e95f938ab","path":"sprites/mage_skill/mage_skill.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"2fa41646-94b0-441b-9c45-889e95f938ab","path":"sprites/mage_skill/mage_skill.yy",},"LayerId":{"name":"5a95d698-e1db-4626-8d1a-8afb37812b64","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"mage_skill","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","name":"2fa41646-94b0-441b-9c45-889e95f938ab","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"3ec759ce-2b1b-4084-92a7-32f8efc936b1","path":"sprites/mage_skill/mage_skill.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"3ec759ce-2b1b-4084-92a7-32f8efc936b1","path":"sprites/mage_skill/mage_skill.yy",},"LayerId":{"name":"5a95d698-e1db-4626-8d1a-8afb37812b64","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"mage_skill","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","name":"3ec759ce-2b1b-4084-92a7-32f8efc936b1","tags":[],"resourceType":"GMSpriteFrame",},
+  ],
+  "sequence": {
+    "spriteId": {"name":"mage_skill","path":"sprites/mage_skill/mage_skill.yy",},
+    "timeUnits": 1,
+    "playback": 1,
+    "playbackSpeed": 30.0,
+    "playbackSpeedType": 0,
+    "autoRecord": true,
+    "volume": 1.0,
+    "length": 25.0,
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "tracks": [
+      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"5473deac-c6aa-404f-9b8a-ad4e818376e1","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"bbc58f4a-6798-40a4-b5da-0abd222896af","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"ca7cd6ca-20e3-41da-823f-d0b2a2f1f983","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7db4ad65-53df-486b-90d8-532d5c37a3ff","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"cdfad3af-13a8-46f3-b803-741041979971","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"365cdf2a-562b-4c94-b68f-b22b81130cb2","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"4a1fbdfc-fde1-4732-98b7-ed4f56937413","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c9ae00db-41c8-4a2f-83fe-03dc8f9ade9a","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"56e7ac36-71b9-4754-bb73-462e3b83430d","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"156b5a1b-3742-4f28-b256-e8b62c21c157","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"28ef3862-8c4d-478b-b579-bf9df2431cab","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a496d031-3bbf-4405-b883-6ce33cbe9899","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"06df8cca-a36c-4bcc-916c-097e5f47b628","Key":6.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b789db74-d4d7-449a-a61e-07e20df49e33","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"ccd2e782-b201-48a1-add5-4b5652d63263","Key":7.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e87bb9e2-68aa-4655-ae7f-cf0d2a7a7706","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"ab235341-2cd5-43b8-925d-f3da91a71554","Key":8.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"218f741c-9799-42b2-9a3a-2209968cf178","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"fb58c5dd-03a2-4ef3-b167-84f1c2918e35","Key":9.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8b46c9ae-8181-4a3d-ba4a-c3ca97df854e","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"406848fa-d765-40c2-9aa9-bc58050ec446","Key":10.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f92ba14c-429e-4198-af7b-43f8835ac207","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"7fac0e24-bd42-4fcd-98cd-38fb42ee37a7","Key":11.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"48dedf2f-e088-4dde-9cda-22401f4075f9","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"370662e6-66ce-433c-a84f-5a9cdb10758b","Key":12.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6f5ebeb6-c052-4826-bdc5-407cd3441fc1","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"c13ee1b0-1da2-421c-9f97-06f4b755cd19","Key":13.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a8324f63-6c7c-41bb-aa30-09b63e10ba2f","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"4d067622-3c24-4f14-8287-10434608995b","Key":14.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f4fc9561-a378-4433-943f-f79692e02980","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"9f626661-a45e-4a10-857e-915be27388bc","Key":15.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"904553a4-74d8-4231-bd20-5ba107f7034e","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"0679f230-bcb5-4dd8-bf73-feeb0d191e61","Key":16.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"82defeb1-8d86-43fc-b026-8761919e9659","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"7e305132-3176-4784-8e9c-1ead034daacb","Key":17.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9ea5f2be-4ed4-4b05-a4bc-93bf5c97ebb1","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"e79609fe-085f-480e-ae90-6bb12a9917af","Key":18.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"30e0d5c7-eea4-4a48-ac9e-cef607f065f6","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"52798635-0592-46a4-98e7-03dcb01c1117","Key":19.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c3b9115a-e797-48e9-8e59-44fb88f70ccb","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"e301a9b6-b97b-4e60-b6e2-afa185ef8d59","Key":20.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"69602581-8b69-4d12-89c8-aa7de821cf15","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"116133c4-9dd0-49f3-9d4b-df209e24d2e2","Key":21.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"75d8cca2-acd8-4ac2-826d-6533f298b1a7","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"42f4594d-3ea8-4ff6-ac15-f2c63b01b8fd","Key":22.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5f3d771f-7137-45bd-a680-ccbbe789791e","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"6367ad83-ca7c-4eb5-a574-d9ec157ed430","Key":23.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2fa41646-94b0-441b-9c45-889e95f938ab","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"13f81a40-9223-43a3-b228-9cb40024b85c","Key":24.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3ec759ce-2b1b-4084-92a7-32f8efc936b1","path":"sprites/mage_skill/mage_skill.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+    ],
+    "visibleRange": null,
+    "lockOrigin": false,
+    "showBackdrop": true,
+    "showBackdropImage": false,
+    "backdropImagePath": "",
+    "backdropImageOpacity": 0.5,
+    "backdropWidth": 1366,
+    "backdropHeight": 768,
+    "backdropXOffset": 0.0,
+    "backdropYOffset": 0.0,
+    "xorigin": 0,
+    "yorigin": 0,
+    "eventToFunction": {},
+    "eventStubScript": null,
+    "parent": {"name":"mage_skill","path":"sprites/mage_skill/mage_skill.yy",},
+    "resourceVersion": "1.4",
+    "name": "mage_skill",
+    "tags": [],
+    "resourceType": "GMSequence",
+  },
+  "layers": [
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"5a95d698-e1db-4626-8d1a-8afb37812b64","tags":[],"resourceType":"GMImageLayer",},
+  ],
+  "nineSlice": null,
+  "parent": {
+    "name": "Stage2",
+    "path": "folders/Sprites/Abilities/Enemy/Stage2.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "mage_skill",
+  "tags": [],
+  "resourceType": "GMSprite",
+}

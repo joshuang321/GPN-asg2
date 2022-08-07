@@ -1,0 +1,175 @@
+{
+  "bboxMode": 0,
+  "collisionKind": 1,
+  "type": 0,
+  "origin": 0,
+  "preMultiplyAlpha": false,
+  "edgeFiltering": false,
+  "collisionTolerance": 0,
+  "swfPrecision": 2.525,
+  "bbox_left": 0,
+  "bbox_right": 79,
+  "bbox_top": 0,
+  "bbox_bottom": 89,
+  "HTile": false,
+  "VTile": false,
+  "For3D": false,
+  "width": 96,
+  "height": 96,
+  "textureGroupId": {
+    "name": "Default",
+    "path": "texturegroups/Default",
+  },
+  "swatchColours": null,
+  "gridX": 0,
+  "gridY": 0,
+  "frames": [
+    {"compositeImage":{"FrameId":{"name":"bd69d0c3-5c14-41c2-9908-71c28268c44d","path":"sprites/socerer_skill/socerer_skill.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"bd69d0c3-5c14-41c2-9908-71c28268c44d","path":"sprites/socerer_skill/socerer_skill.yy",},"LayerId":{"name":"0013b21d-0313-411e-908e-1260c4cfd149","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"socerer_skill","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","name":"bd69d0c3-5c14-41c2-9908-71c28268c44d","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"47ccb494-1b64-4491-b228-848a67a66ba5","path":"sprites/socerer_skill/socerer_skill.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"47ccb494-1b64-4491-b228-848a67a66ba5","path":"sprites/socerer_skill/socerer_skill.yy",},"LayerId":{"name":"0013b21d-0313-411e-908e-1260c4cfd149","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"socerer_skill","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","name":"47ccb494-1b64-4491-b228-848a67a66ba5","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"28117d14-f718-4830-bb50-e2280860d100","path":"sprites/socerer_skill/socerer_skill.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"28117d14-f718-4830-bb50-e2280860d100","path":"sprites/socerer_skill/socerer_skill.yy",},"LayerId":{"name":"0013b21d-0313-411e-908e-1260c4cfd149","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"socerer_skill","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","name":"28117d14-f718-4830-bb50-e2280860d100","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"d073898f-3149-4a41-97fd-0ecddf3e89ab","path":"sprites/socerer_skill/socerer_skill.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"d073898f-3149-4a41-97fd-0ecddf3e89ab","path":"sprites/socerer_skill/socerer_skill.yy",},"LayerId":{"name":"0013b21d-0313-411e-908e-1260c4cfd149","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"socerer_skill","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","name":"d073898f-3149-4a41-97fd-0ecddf3e89ab","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"238acd88-1d73-4bf5-b69f-194a9a562a70","path":"sprites/socerer_skill/socerer_skill.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"238acd88-1d73-4bf5-b69f-194a9a562a70","path":"sprites/socerer_skill/socerer_skill.yy",},"LayerId":{"name":"0013b21d-0313-411e-908e-1260c4cfd149","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"socerer_skill","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","name":"238acd88-1d73-4bf5-b69f-194a9a562a70","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"dbccf7c0-aee1-4e91-bdd2-ff40def10d97","path":"sprites/socerer_skill/socerer_skill.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"dbccf7c0-aee1-4e91-bdd2-ff40def10d97","path":"sprites/socerer_skill/socerer_skill.yy",},"LayerId":{"name":"0013b21d-0313-411e-908e-1260c4cfd149","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"socerer_skill","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","name":"dbccf7c0-aee1-4e91-bdd2-ff40def10d97","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"5732e278-53d4-47f4-a787-fa7732b27ffe","path":"sprites/socerer_skill/socerer_skill.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"5732e278-53d4-47f4-a787-fa7732b27ffe","path":"sprites/socerer_skill/socerer_skill.yy",},"LayerId":{"name":"0013b21d-0313-411e-908e-1260c4cfd149","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"socerer_skill","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","name":"5732e278-53d4-47f4-a787-fa7732b27ffe","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"47bd8ec7-39ad-4d11-914b-404d4d6b8511","path":"sprites/socerer_skill/socerer_skill.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"47bd8ec7-39ad-4d11-914b-404d4d6b8511","path":"sprites/socerer_skill/socerer_skill.yy",},"LayerId":{"name":"0013b21d-0313-411e-908e-1260c4cfd149","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"socerer_skill","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","name":"47bd8ec7-39ad-4d11-914b-404d4d6b8511","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"32ddc661-4645-42c5-b9bc-01f68cc7c22c","path":"sprites/socerer_skill/socerer_skill.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"32ddc661-4645-42c5-b9bc-01f68cc7c22c","path":"sprites/socerer_skill/socerer_skill.yy",},"LayerId":{"name":"0013b21d-0313-411e-908e-1260c4cfd149","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"socerer_skill","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","name":"32ddc661-4645-42c5-b9bc-01f68cc7c22c","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"54aa0ce2-558a-4491-9bde-ceeeb9faf961","path":"sprites/socerer_skill/socerer_skill.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"54aa0ce2-558a-4491-9bde-ceeeb9faf961","path":"sprites/socerer_skill/socerer_skill.yy",},"LayerId":{"name":"0013b21d-0313-411e-908e-1260c4cfd149","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"socerer_skill","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","name":"54aa0ce2-558a-4491-9bde-ceeeb9faf961","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"c6c40d5a-3e92-455f-9d04-14d0350f91c0","path":"sprites/socerer_skill/socerer_skill.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"c6c40d5a-3e92-455f-9d04-14d0350f91c0","path":"sprites/socerer_skill/socerer_skill.yy",},"LayerId":{"name":"0013b21d-0313-411e-908e-1260c4cfd149","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"socerer_skill","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","name":"c6c40d5a-3e92-455f-9d04-14d0350f91c0","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"5e95ae9f-af97-44d9-9947-b6654e0f2fea","path":"sprites/socerer_skill/socerer_skill.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"5e95ae9f-af97-44d9-9947-b6654e0f2fea","path":"sprites/socerer_skill/socerer_skill.yy",},"LayerId":{"name":"0013b21d-0313-411e-908e-1260c4cfd149","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"socerer_skill","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","name":"5e95ae9f-af97-44d9-9947-b6654e0f2fea","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"cb84ad43-6170-46ad-88d6-684466c6f303","path":"sprites/socerer_skill/socerer_skill.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"cb84ad43-6170-46ad-88d6-684466c6f303","path":"sprites/socerer_skill/socerer_skill.yy",},"LayerId":{"name":"0013b21d-0313-411e-908e-1260c4cfd149","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"socerer_skill","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","name":"cb84ad43-6170-46ad-88d6-684466c6f303","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"d30beb42-7313-4309-92a6-9485cdb889e9","path":"sprites/socerer_skill/socerer_skill.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"d30beb42-7313-4309-92a6-9485cdb889e9","path":"sprites/socerer_skill/socerer_skill.yy",},"LayerId":{"name":"0013b21d-0313-411e-908e-1260c4cfd149","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"socerer_skill","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","name":"d30beb42-7313-4309-92a6-9485cdb889e9","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"9f3bc65d-c8ec-4f60-aa91-5ba22bb054f4","path":"sprites/socerer_skill/socerer_skill.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"9f3bc65d-c8ec-4f60-aa91-5ba22bb054f4","path":"sprites/socerer_skill/socerer_skill.yy",},"LayerId":{"name":"0013b21d-0313-411e-908e-1260c4cfd149","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"socerer_skill","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","name":"9f3bc65d-c8ec-4f60-aa91-5ba22bb054f4","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"462e3f09-791a-435f-ae05-f9d20ba7a596","path":"sprites/socerer_skill/socerer_skill.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"462e3f09-791a-435f-ae05-f9d20ba7a596","path":"sprites/socerer_skill/socerer_skill.yy",},"LayerId":{"name":"0013b21d-0313-411e-908e-1260c4cfd149","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"socerer_skill","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","name":"462e3f09-791a-435f-ae05-f9d20ba7a596","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"ab1fd0ce-9fc0-4447-b675-215a83b1e5e3","path":"sprites/socerer_skill/socerer_skill.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"ab1fd0ce-9fc0-4447-b675-215a83b1e5e3","path":"sprites/socerer_skill/socerer_skill.yy",},"LayerId":{"name":"0013b21d-0313-411e-908e-1260c4cfd149","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"socerer_skill","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","name":"ab1fd0ce-9fc0-4447-b675-215a83b1e5e3","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"6ca31578-3522-4fbf-ad9d-20a0434a15b1","path":"sprites/socerer_skill/socerer_skill.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"6ca31578-3522-4fbf-ad9d-20a0434a15b1","path":"sprites/socerer_skill/socerer_skill.yy",},"LayerId":{"name":"0013b21d-0313-411e-908e-1260c4cfd149","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"socerer_skill","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","name":"6ca31578-3522-4fbf-ad9d-20a0434a15b1","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"dc132dee-e548-44ed-9d16-acb9b44b5798","path":"sprites/socerer_skill/socerer_skill.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"dc132dee-e548-44ed-9d16-acb9b44b5798","path":"sprites/socerer_skill/socerer_skill.yy",},"LayerId":{"name":"0013b21d-0313-411e-908e-1260c4cfd149","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"socerer_skill","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","name":"dc132dee-e548-44ed-9d16-acb9b44b5798","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"5fa26cc9-8dd0-40c7-8aa1-492c4bd46659","path":"sprites/socerer_skill/socerer_skill.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"5fa26cc9-8dd0-40c7-8aa1-492c4bd46659","path":"sprites/socerer_skill/socerer_skill.yy",},"LayerId":{"name":"0013b21d-0313-411e-908e-1260c4cfd149","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"socerer_skill","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","name":"5fa26cc9-8dd0-40c7-8aa1-492c4bd46659","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"71031ec6-01f3-47a5-9d48-7ffd861eca9c","path":"sprites/socerer_skill/socerer_skill.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"71031ec6-01f3-47a5-9d48-7ffd861eca9c","path":"sprites/socerer_skill/socerer_skill.yy",},"LayerId":{"name":"0013b21d-0313-411e-908e-1260c4cfd149","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"socerer_skill","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","name":"71031ec6-01f3-47a5-9d48-7ffd861eca9c","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"1aba2eda-92ac-4cdc-9d5c-b4867898c73a","path":"sprites/socerer_skill/socerer_skill.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"1aba2eda-92ac-4cdc-9d5c-b4867898c73a","path":"sprites/socerer_skill/socerer_skill.yy",},"LayerId":{"name":"0013b21d-0313-411e-908e-1260c4cfd149","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"socerer_skill","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","name":"1aba2eda-92ac-4cdc-9d5c-b4867898c73a","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"aa7cf6b4-4250-4f9a-b4b5-4fa5ac7ee3c7","path":"sprites/socerer_skill/socerer_skill.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"aa7cf6b4-4250-4f9a-b4b5-4fa5ac7ee3c7","path":"sprites/socerer_skill/socerer_skill.yy",},"LayerId":{"name":"0013b21d-0313-411e-908e-1260c4cfd149","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"socerer_skill","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","name":"aa7cf6b4-4250-4f9a-b4b5-4fa5ac7ee3c7","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"cb9e2d25-676f-40fd-b389-e6dd346062cc","path":"sprites/socerer_skill/socerer_skill.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"cb9e2d25-676f-40fd-b389-e6dd346062cc","path":"sprites/socerer_skill/socerer_skill.yy",},"LayerId":{"name":"0013b21d-0313-411e-908e-1260c4cfd149","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"socerer_skill","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","name":"cb9e2d25-676f-40fd-b389-e6dd346062cc","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"72773727-059a-4dad-85f5-440ca0c47707","path":"sprites/socerer_skill/socerer_skill.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"72773727-059a-4dad-85f5-440ca0c47707","path":"sprites/socerer_skill/socerer_skill.yy",},"LayerId":{"name":"0013b21d-0313-411e-908e-1260c4cfd149","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"socerer_skill","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","name":"72773727-059a-4dad-85f5-440ca0c47707","tags":[],"resourceType":"GMSpriteFrame",},
+  ],
+  "sequence": {
+    "spriteId": {"name":"socerer_skill","path":"sprites/socerer_skill/socerer_skill.yy",},
+    "timeUnits": 1,
+    "playback": 1,
+    "playbackSpeed": 30.0,
+    "playbackSpeedType": 0,
+    "autoRecord": true,
+    "volume": 1.0,
+    "length": 25.0,
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "tracks": [
+      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"1d71ebfa-924d-4d36-aaa4-ef087280b77f","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"bd69d0c3-5c14-41c2-9908-71c28268c44d","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"29ee5867-420b-4369-9a5b-0b82b74f43ad","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"47ccb494-1b64-4491-b228-848a67a66ba5","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"d5c0fa71-3cd3-4a3b-b6ca-e937a7c4dec7","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"28117d14-f718-4830-bb50-e2280860d100","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"7a3e50c5-7062-4245-85d7-496e98bbcc42","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d073898f-3149-4a41-97fd-0ecddf3e89ab","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"dd7160f0-f9de-4159-a1d5-7e6e4be77ff3","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"238acd88-1d73-4bf5-b69f-194a9a562a70","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"ba382687-7023-4a69-a053-206e1c2b8c75","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"dbccf7c0-aee1-4e91-bdd2-ff40def10d97","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"87b9b555-51b5-4ac6-a439-6aa2e98ed85a","Key":6.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5732e278-53d4-47f4-a787-fa7732b27ffe","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"238c7594-0135-47e0-93ec-c029d2d8576d","Key":7.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"47bd8ec7-39ad-4d11-914b-404d4d6b8511","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"9e5d0a3d-fcca-428f-8cb5-0511b135d6bd","Key":8.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"32ddc661-4645-42c5-b9bc-01f68cc7c22c","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"c5c0a15c-b409-4953-8b31-c6c8bf128e6c","Key":9.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"54aa0ce2-558a-4491-9bde-ceeeb9faf961","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"722ed288-1eac-40be-a836-68997a8754cd","Key":10.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c6c40d5a-3e92-455f-9d04-14d0350f91c0","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"caded953-b358-4dc4-a467-e44031a2bcbe","Key":11.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5e95ae9f-af97-44d9-9947-b6654e0f2fea","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"1a9b6693-37b5-4ac7-aec6-122e4207f495","Key":12.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"cb84ad43-6170-46ad-88d6-684466c6f303","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"536e00d1-0b4a-428c-9b0c-3b671f222bff","Key":13.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d30beb42-7313-4309-92a6-9485cdb889e9","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"581155d8-f619-4167-a4f1-33867cc19714","Key":14.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9f3bc65d-c8ec-4f60-aa91-5ba22bb054f4","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"31e342e2-a42d-4255-925f-8a20b6b64677","Key":15.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"462e3f09-791a-435f-ae05-f9d20ba7a596","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"2251383a-765f-40bb-96d3-6b1f544a4549","Key":16.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ab1fd0ce-9fc0-4447-b675-215a83b1e5e3","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"b2f071c6-6aa6-4f77-8bae-aafd92db7f22","Key":17.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6ca31578-3522-4fbf-ad9d-20a0434a15b1","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"37a36855-1fb0-45eb-acd3-4141f2fb4eb4","Key":18.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"dc132dee-e548-44ed-9d16-acb9b44b5798","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"cd658eaf-3c3e-4134-ab99-d8ad57f83b14","Key":19.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5fa26cc9-8dd0-40c7-8aa1-492c4bd46659","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"ee5c2be8-c4ba-446f-a4f9-51ba94ef9ef0","Key":20.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"71031ec6-01f3-47a5-9d48-7ffd861eca9c","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"48b7c0cd-9703-48ee-b30b-7ee119238132","Key":21.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1aba2eda-92ac-4cdc-9d5c-b4867898c73a","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"dacf7355-48e1-4c49-8f32-53b45733b082","Key":22.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"aa7cf6b4-4250-4f9a-b4b5-4fa5ac7ee3c7","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"16369e5b-443f-45c1-9251-7562def2a6db","Key":23.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"cb9e2d25-676f-40fd-b389-e6dd346062cc","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"ce2b2a31-d696-4d96-b0dd-3998a2535156","Key":24.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"72773727-059a-4dad-85f5-440ca0c47707","path":"sprites/socerer_skill/socerer_skill.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+    ],
+    "visibleRange": null,
+    "lockOrigin": false,
+    "showBackdrop": true,
+    "showBackdropImage": false,
+    "backdropImagePath": "",
+    "backdropImageOpacity": 0.5,
+    "backdropWidth": 1366,
+    "backdropHeight": 768,
+    "backdropXOffset": 0.0,
+    "backdropYOffset": 0.0,
+    "xorigin": 0,
+    "yorigin": 0,
+    "eventToFunction": {},
+    "eventStubScript": null,
+    "parent": {"name":"socerer_skill","path":"sprites/socerer_skill/socerer_skill.yy",},
+    "resourceVersion": "1.4",
+    "name": "socerer_skill",
+    "tags": [],
+    "resourceType": "GMSequence",
+  },
+  "layers": [
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"0013b21d-0313-411e-908e-1260c4cfd149","tags":[],"resourceType":"GMImageLayer",},
+  ],
+  "nineSlice": null,
+  "parent": {
+    "name": "Stage2",
+    "path": "folders/Sprites/Abilities/Enemy/Stage2.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "socerer_skill",
+  "tags": [],
+  "resourceType": "GMSprite",
+}
