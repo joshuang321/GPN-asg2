@@ -143,6 +143,26 @@
 			"buff_at" : 0.5,
 			"dmg" : 5
 		}
+	}, {
+		"id": 5,
+		"obj" : "eEnemy3",
+		"sprite": "Enemy3",
+		"data" : {
+			"attack_prob_max" : 0.96,
+			"attack_prob_min" : 0.86,
+			"buff_at" : 0.5,
+			"dmg" : 5
+		}
+	}, {
+		"id": 6,
+		"obj" : "eBoss3",
+		"sprite": "Boss3",
+		"data" : {
+			"attack_prob_max" : 0.96,
+			"attack_prob_min" : 0.86,
+			"buff_at" : 0.5,
+			"dmg" : 5
+		}
 	}],
 
 	"effect": [{
