@@ -3,6 +3,6 @@ var _self = id;
 with(global.Game.level.playerInst)
 {
 	audio_play_sound(socererAttack, 0, false);
-	startAnimation(enemy_bash);
+	startAnimation(socerer_attack);
 	dealDamage(_self, _dmg);
 }
