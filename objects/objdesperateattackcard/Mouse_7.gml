@@ -6,10 +6,11 @@ if (noone != global.Game.level.enemySelected &&
 	var _dmg = 0;
 	var _data = data;
 	with (global.Game.level.playerInst)
-		var _health = maxhealth * _data.health_percent_offset - curhealth;
+		var _health = (maxhealth  - curhealth) / maxhealth;
 	
-	_dmg =  max(0, _health) * (data.init_percent_dmg +
-		level * data.inc_step)
+	_dmg = (1-_health) * (data.init_dmg + 
+		level * data.inc_step);
+
 	
 	with (global.Game.level.enemySelected)
 	{
