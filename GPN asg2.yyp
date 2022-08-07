@@ -21,7 +21,6 @@
     {"id":{"name":"Boss1","path":"sprites/Boss1/Boss1.yy",},"order":0,},
     {"id":{"name":"dragonAttack","path":"sounds/dragonAttack/dragonAttack.yy",},"order":1,},
     {"id":{"name":"sfxBossStage4","path":"sounds/sfxBossStage4/sfxBossStage4.yy",},"order":0,},
-    {"id":{"name":"GameTitle","path":"objects/GameTitle/GameTitle.yy",},"order":3,},
     {"id":{"name":"eBoss3","path":"objects/eBoss3/eBoss3.yy",},"order":0,},
     {"id":{"name":"GameState","path":"scripts/GameState/GameState.yy",},"order":4,},
     {"id":{"name":"CardBuilder","path":"objects/CardBuilder/CardBuilder.yy",},"order":3,},
