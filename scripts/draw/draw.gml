@@ -24,18 +24,21 @@ function drawCard()
 function drawCardNumber(_number)
 {
 	draw_set_font(global.uiSmallFont);
-	draw_set_color(#000000);
+	draw_set_color(#CCCCCC);
 	draw_text(x + X_NUM_OFFSET + 3, y + Y_NUM_OFFSET + 2,
 		_number);
 }
 
 function drawCardCost()
 {
-	var _cardCost = card_cost.init + (variable_instance_exists(id, "level")?
-		level : 0) * card_cost.inc_step;
+	var _cardCost = card_cost.init + level * card_cost.inc_step;
 	draw_set_font(global.uiSmallFont);
 	draw_set_color(#000000);
-	draw_text(x + sprite_width - X_NUM_OFFSET - 10, y + Y_NUM_OFFSET, _cardCost);
+	var _x = x + sprite_width - X_NUM_OFFSET - 20;
+	var _y =  y + Y_NUM_OFFSET, _cardCost;
+	
+	draw_sprite_stretched(sEnergy, 0, _x-10, _y, 35, 35);
+	draw_text(_x, _y, _cardCost);
 }
 
 #macro _HEALTHBAR_WIDTH		180

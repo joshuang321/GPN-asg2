@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "NewGame",
-    "path": "sprites/NewGame/NewGame.yy",
+    "name": "sUnknown",
+    "path": "sprites/sUnknown/sUnknown.yy",
   },
   "solid": false,
   "visible": true,

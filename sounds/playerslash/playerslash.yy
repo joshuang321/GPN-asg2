@@ -14,8 +14,8 @@
   "soundFile": "playerslash.ogg",
   "duration": 0.49839,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Player",
+    "path": "folders/Sounds/Player.yy",
   },
   "resourceVersion": "1.0",
   "name": "playerSlash",

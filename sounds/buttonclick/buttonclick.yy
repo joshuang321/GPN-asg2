@@ -14,8 +14,8 @@
   "soundFile": "buttonclick.mp3",
   "duration": 0.417938,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "UI",
+    "path": "folders/Sounds/UI.yy",
   },
   "resourceVersion": "1.0",
   "name": "buttonClick",

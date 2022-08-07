@@ -14,8 +14,8 @@
   "soundFile": "playerblock.ogg",
   "duration": 1.056508,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Player",
+    "path": "folders/Sounds/Player.yy",
   },
   "resourceVersion": "1.0",
   "name": "playerBlock",

@@ -1,7 +1,6 @@
 pressed = false;
 audio_play_sound(buttonClick, 0, false);
-if (variable_global_exists("Game") &&
-	noone != global.Game)
+if (noone != global.Game)
 	destroyCurrentGame();
-loadNew();
+loadNewGame();
 room_goto(MapRoom);

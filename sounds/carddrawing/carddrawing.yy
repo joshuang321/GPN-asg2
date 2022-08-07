@@ -14,8 +14,8 @@
   "soundFile": "carddrawing.ogg",
   "duration": 0.500045,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "UI",
+    "path": "folders/Sounds/UI.yy",
   },
   "resourceVersion": "1.0",
   "name": "cardDrawing",

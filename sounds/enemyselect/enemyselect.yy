@@ -14,8 +14,8 @@
   "soundFile": "enemyselect.ogg",
   "duration": 2.0,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "UI",
+    "path": "folders/Sounds/UI.yy",
   },
   "resourceVersion": "1.0",
   "name": "enemySelect",

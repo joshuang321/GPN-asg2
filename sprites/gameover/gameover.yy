@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "UI",
-    "path": "folders/Sprites/UI.yy",
+    "name": "Level",
+    "path": "folders/Sprites/UI/Menu/Level.yy",
   },
   "resourceVersion": "1.0",
   "name": "GameOver",

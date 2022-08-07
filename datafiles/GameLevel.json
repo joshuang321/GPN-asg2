@@ -15,7 +15,7 @@
         "enemies" : [
             {
                 "id" : 1,
-                "health" : 15
+                "health" : 35
             }, {
                 "id" : 2,
                 "health" : 15

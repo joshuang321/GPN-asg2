@@ -14,8 +14,8 @@
   "soundFile": "playerheal.ogg",
   "duration": 1.076825,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Player",
+    "path": "folders/Sounds/Player.yy",
   },
   "resourceVersion": "1.0",
   "name": "playerHeal",

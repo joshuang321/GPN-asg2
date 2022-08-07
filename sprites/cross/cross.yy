@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "UI",
-    "path": "folders/Sprites/UI.yy",
+    "name": "Card",
+    "path": "folders/Sprites/Card.yy",
   },
   "resourceVersion": "1.0",
   "name": "cross",

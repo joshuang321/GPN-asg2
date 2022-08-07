@@ -1,19 +1,23 @@
 {
 	"enemy_animate_delay": 2.2,
 
+	"max_card_slot" : 16,
+
 	"starting_player": {
 		"init_health": 20,
 		"init_skillpt": 4,
 		"init_card": [
-			3, 3, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2
+			3, 3, 4, 5, 6, 7, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2
 		]
 	},
 
 	"card": [{
 		"card_id": 0,
+		"obj" : "objAttackCard",
 		"sprite": "cNotFound"
 	}, {
 		"card_id": 1,
+		"obj" : "objAttackCard",
 		"sprite": "cAttack",
 		"data": {
 			"init_dmg": 5,
@@ -25,6 +29,7 @@
 		}
 	}, {
 		"card_id": 2,
+		"obj" : "objBlockCard",
 		"sprite": "cBlock",
 		"data": {
 			"init_block": 2,
@@ -36,22 +41,24 @@
 		}
 	}, {
 		"card_id": 3,
+		"obj" : "objHealCard",
 		"sprite": "cHeal",
 		"data": {
-			"init_heal": 2,
+			"init_heal": 5,
 			"inc_step": 1
 		},
 		"card_cost" : {
-			"init" : 2,
+			"init" : 3,
 			"inc_step" : 1
 		}
 	}, {
 		"card_id": 4,
+		"obj" : "objWeakenCard",
 		"sprite": "cWeaken",
 		"data": {
-			"init_percent_weaken": 0.19,
+			"init_percent_weaken": 0.20,
 			"inc_step": 0.03,
-			"init_turn": 3
+			"turns" : 3
 		},
 		"card_cost" : {
 			"init" : 1,
@@ -59,11 +66,12 @@
 		}
 	}, {
 		"card_id": 5,
+		"obj" : "objExhaustCard",
 		"sprite": "cExhaust",
 		"data": {
-			"init_percent_exhaust": 0.17,
+			"init_percent_exhaust": 0.20,
 			"inc_step": 0.03,
-			"init_turn": 3
+			"turns" : 3
 		},
 		"card_cost" : {
 			"init" : 1,
@@ -71,17 +79,25 @@
 		}
 	}, {
 		"card_id": 6,
+		"obj" : "objFirstStrikeCard",
 		"sprite": "cFirstStrike",
 		"data": {
-			"init_percent_dmg": 1.22,
+			"health_percent_offset" : 0.5,
+			"init_percent_dmg": 0.40,
 			"inc_step": 0.02
+		},
+		"card_cost" : {
+			"init" : 1,
+			"inc_step" : 1
 		}
 	}, {
 		"card_id": 7,
+		"obj" : "objDesperateAttackCard",
+		"card_type" : 3,
 		"sprite": "cDesperateAttack",
 		"data": {
-			"health_offset": 10,
-			"init_percent_dmg": 1.22,
+			"health_percent_offset" : 0.5,
+			"init_percent_dmg": 0.40,
 			"inc_step": 0.025
 		},
 		"card_cost" : {
@@ -89,6 +105,7 @@
 			"inc_step" : 1
 		}
 	}],
+
 	"enemy": [{
 		"id": 1,
 		"obj" : "eEnemy",
@@ -96,7 +113,7 @@
 		"data" : {
 			"attack_prob_max" : 0.84,
 			"attack_prob_min" : 0.76,
-			"dmg" : 3
+			"dmg" : 1
 		}
 	}, {
 		"id": 2,
@@ -109,37 +126,26 @@
 			"dmg" : 5
 		}
 	}],
-	"intent": [{
-		"id" : 1,
-		"sprite" : "cAttack",
-		"name" : "Attack",
-		"Aname" : "Attacked!"
-	}, {
-		"id": 2,
-		"name": "Buff",
-		"Aname": "Buffed!"
-	}, {
-		"id": 3,
-		"name": "Deflect",
-		"Aname": "Deflected!"
-	}],
+
 	"effect": [{
 			"id": 1,
 			"name": "Weakened",
-			"sprite": "cWeaken"
-		},
-		{
+			"sprite": "player_weaken"
+		}, {
 			"id": 2,
 			"name": "Exhausted",
-			"sprite": "cExhaust"
+			"sprite": "player_exhaust"
 		}
 	],
+
 	"background" : [{
 		"id" : 1,
-		"sprite" : "NormalStage1"
+		"sprite" : "NormalStage1",
+		"bgm" : "sfxNormalStage1"
 	}, {
 		"id" : 2,
-		"sprite" : "BossStage1"
+		"sprite" : "BossStage1",
+		"bgm" : "sfxBossStage1"
 	}, {
 		"id" : 3,
 		"sprite" : "NormalStage2"

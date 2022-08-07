@@ -2,8 +2,7 @@
 #macro Y_NUM_OFFSET		5
 
 drawCard();
-var _number = data.init_dmg + (variable_instance_exists(id, "level") ?
-	level : 0) * data.inc_step;
-draw_sprite(blooddrop, 0, x, y);
+var _number = data.init_dmg + level * data.inc_step;
+draw_sprite(blooddrop, 0, x-3, y);
 drawCardNumber(_number);
 drawCardCost();

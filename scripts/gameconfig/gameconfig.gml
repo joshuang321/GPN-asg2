@@ -1,5 +1,25 @@
 #macro _GAME_FPS 60
 
+function load_json_data(_filename, _load_fails_dmessage,
+	_file_dnexists_dmessage, _global_var_str)
+{
+	if (file_exists(_filename))
+	{
+		var _buffer = buffer_load(_filename);
+		var _string = buffer_read(_buffer, buffer_string);
+		buffer_delete(_buffer);
+		var _data = json_parse(_string);
+		if (-1 == _data)
+			show_debug_message(_load_fails_dmessage);
+		else
+			return _data;
+	}
+	else {
+		show_debug_message(_file_dnexists_dmessage);
+	}
+	return noone;
+}
+
 function loadGame()
 {
 	global.uiFont = font_add("DampfPlatzsh.ttf", 72,
@@ -23,6 +43,8 @@ function loadGame()
 		"Failed to load Levels!",
 		"GameLevel.json does not exists!");
 	show_debug_message(global.GameLevel);
+	
+	global.Game = noone;
 		
 	game_set_speed(_GAME_FPS, gamespeed_fps);
 		
@@ -38,6 +60,7 @@ function GameEnemy(_enemyData, _enemyHealth) constructor
 function GameCard(_Card) constructor
 {
 	card_id = _Card.card_id;
+	obj = _Card.obj;
 	sprite = _Card.sprite;
 	data = _Card.data;
 	card_cost = _Card.card_cost;
@@ -71,6 +94,7 @@ function Level() constructor
 	
 	player_pending_list = ds_list_create();
 	enemies = ds_list_create();
+	enemySelected = noone;
 }
 
 function cGame() constructor
@@ -116,11 +140,32 @@ function NewLevel(_levelNo)
 	startNewGameState(_GAMESTATE_DRAW);
 }
 
+function loadNewGame()
+{
+	global.Game = new cGame();
+}
+
 function getLevel(_levelNo)
 {
 	return (array_length(global.GameLevel) < (_levelNo + 1))? noone :
 		global.GameLevel[_levelNo];
 }
+
+function setBackground(_level)
+{
+	for (var _i=0;
+		_i<array_length(global.GameConfig.background);
+		_i++)
+	{
+		if (_level.background_id = global.GameConfig.background[_i].id)
+		{
+			layer_background_sprite(layer_background_get_id("Background"),
+				asset_get_index(global.GameConfig.background[_i].sprite));
+			audio_play_sound(asset_get_index(global.GameConfig.background[_i].bgm), 0, true);
+		}
+	}
+}
+	
 
 function destroyCurrentGame()
 {
@@ -130,9 +175,8 @@ function destroyCurrentGame()
 
 function destroyCurrentLevel()
 {
-	ds_stack_destroy(global.Game.Level.player_card);
-	ds_list_destroy(global.Game.Level.player_pending_list);
-	ds_list_destroy(global.Game.Level.enemies);
+	ds_list_destroy(global.Game.level.player_pending_list);
+	ds_list_destroy(global.Game.level.enemies);
 	delete global.Game.Level;
 }
 
@@ -146,6 +190,16 @@ function findCardFromId(_card_id)
 	return global.GameConfig.card[0];
 }
 
+function findCardType(_card_type)
+{
+	for (var _i=0;
+		_i<array_length(global.GameConfig.card_types);
+		_i++)
+		if (_card_type == global.GameConfig.card_types[_i].card_type)
+			return global.GameConfig.card_types[_i];
+	return noone;
+}
+
 function findEnemyFromId(_enemy_id)
 {
 	for (var _i=0;
@@ -153,30 +207,5 @@ function findEnemyFromId(_enemy_id)
 		_i++)
 		if (_enemy_id ==global.GameConfig.enemy[_i].id)
 			return global.GameConfig.enemy[_i];
-	return noone;
-}
-
-function loadNew()
-{
-	global.Game = new cGame();
-}
-
-function load_json_data(_filename, _load_fails_dmessage,
-	_file_dnexists_dmessage, _global_var_str)
-{
-	if (file_exists(_filename))
-	{
-		var _buffer = buffer_load(_filename);
-		var _string = buffer_read(_buffer, buffer_string);
-		buffer_delete(_buffer);
-		var _data = json_parse(_string);
-		if (-1 == _data)
-			show_debug_message(_load_fails_dmessage);
-		else
-			return _data;
-	}
-	else {
-		show_debug_message(_file_dnexists_dmessage);
-	}
 	return noone;
 }

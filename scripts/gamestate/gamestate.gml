@@ -15,42 +15,23 @@ function startNewGameState(_gameState)
 	switch (_gameState)
 	{
 		case _GAMESTATE_DRAW:
-			audio_play_sound(cardDrawing, 0, false);
-			with (global.Game.level.playerInst)
-				block = 0;
-				
 			for (var _i=0;
 				_i<ds_list_size(global.Game.level.enemies);
 				_i++)
 				with(global.Game.level.enemies[| _i])
 					block = 0;
+			with (global.Game.level.playerInst)
+				block = 0;
 			
+			audio_play_sound(cardDrawing, 1, false);
 			global.Game.level.cardArray = chooseCards(4);
+			
 			var _x = 224;
-			show_debug_message(global.Game.level.cardArray);
 			for (var _i=0;
 				_i<array_length(global.Game.level.cardArray);
 				_i++)
 			{
-				global.Game.level.cardArray[_i].Animate = true;
-				
-				switch (global.Game.level.cardArray[_i].card_id)
-				{
-					case 1:
-						instance_create_layer(_x, 864, "Instances", objAttackCard,
-							global.Game.level.cardArray[_i]);
-							break;
-					
-					case 2:
-						instance_create_layer(_x, 864, "Instances", objBlockCard,
-							global.Game.level.cardArray[_i]);
-							break;
-					
-					default:
-						instance_create_layer(_x, 864, "Instances", objMiscCard,
-							global.Game.level.cardArray[_i]);
-							break;
-				}
+				instantiateCard(_x, global.Game.level.cardArray[_i]);
 				_x+=195;
 			}
 			startNewGameState(_GAMESTATE_DISPLAY);
@@ -61,19 +42,12 @@ function startNewGameState(_gameState)
 				
 		case _GAMESTATE_PLAYER_END:
 			layer_set_visible("Menu", false);
-			
 			instance_deactivate_object(inst_14642C0E);
 			instance_deactivate_object(inst_68DD3F95);
 			instance_deactivate_object(inst_36C961E6);
 			
 			global.Game.level.enemySelected  = noone;
-			
-			with (objAttackCard)
-				instance_destroy(id);
-			with (objBlockCard)
-				instance_destroy(id);
-			with (objMiscCard)
-				instance_destroy(id);
+			layer_destroy_instances("Cards");
 			
 			for (var _i=0;
 				_i<array_length(global.Game.level.cardArray);
@@ -90,9 +64,9 @@ function startNewGameState(_gameState)
 				_i++)
 				with (global.Game.level.enemies[|_i])
 					alarm[0] = (_i * global.GameConfig.enemy_animate_delay + 2) * _GAME_FPS;
-			show_debug_message(ds_list_size(global.Game.level.enemies));
-			with (inst_6F2A37EA)
-				alarm[0] = ((ds_list_size(global.Game.level.enemies) -1) *
+			
+			with (inst_1FB0A37B)
+				alarm[1] = ((ds_list_size(global.Game.level.enemies) -1) *
 					global.GameConfig.enemy_animate_delay + 4) * _GAME_FPS;
 			break;
 				
@@ -102,17 +76,17 @@ function startNewGameState(_gameState)
 			global.Game.level.player_skillpts = global.Game.player_skillpts;
 			startNewGameState(_GAMESTATE_DRAW);
 			break;
-			
+		
+		
 		case _GAMESTATE_VICTORY:
+		case _GAMESTATE_DEFEAT:
 			layer_set_visible("Menu", false);
 			instance_deactivate_layer("Menu");
-			destroyAllCards();
-			with (global.Game.level.playerInst)
-				alarm[0] = 3 * _GAME_FPS;
-			break;
+			layer_destroy_instances("Cards");
+			show_debug_message("FINALGAMESTATE:" + string(global.Game.level.gameState));
 			
-			
-		case _GAMESTATE_DEFEAT:
+			with (inst_1FB0A37B)
+				alarm[0] = 4 * _GAME_FPS;
 			break;
 			
 		default:
@@ -142,37 +116,61 @@ function chooseCards(_amount)
 	return _cardArray;	
 }
 
-function checkEffect(_id, _effect_id)
+function instantiateCard(_x, _Card)
 {
-	var _hasEffect = false;
-	with (_id)
-	{
-		for(var _i=0;
+	instance_create_layer(_x, 864, "Cards", asset_get_index(_Card.obj),
+		_Card);
+}
+
+function getEffectId(_effect)
+{
+	for (var _i=0;
+		_i<array_length(global.GameConfig.effect);
+		_i++)
+		if (_effect == global.GameConfig.effect[_i].name)
+			return global.GameConfig.effect[_i].id;
+			
+	return -1;
+}
+
+function getEffectSprite(_effectId)
+{
+	for (var _i=0;
+		_i<array_length(global.GameConfig.effect);
+		_i++)
+		if (_effectId == global.GameConfig.effect[_i].id)
+			return global.GameConfig.effect[_i].sprite;
+	return noone;
+}
+
+function checkEffect(_effect)
+{
+	var _effectId = getEffectId(_effect);
+	show_debug_message(_effectId);
+	for (var _i=0;
 		_i<ds_list_size(Effects);
 		_i++)
-		{
-			if (_effect_id == Effects[| _i])
-				return true;
-		}
+		if (_effectId == Effects[| _i].effect_id)
+			return _i;
+			
+	return -1;
+}
+
+function addEffect(_effect, _data)
+{
+	var _effectId = getEffectId(_effect);
+	show_debug_message(_effectId);
+	if (-1 == checkEffect(_effect))
+	{
+		ds_list_add(Effects, { effect_id :_effectId, data : _data });
+		show_debug_message("sprite_index: " + string(asset_get_index(getEffectSprite(_effectId))));
+		startAnimation(asset_get_index(getEffectSprite(_effectId)));
 	}
-	return false;
+	else
+	show_debug_message("effect not found");
 }
 
-function addEffect(_id, _effectName)
+function removeEffect(_effectIndex)
 {
-	checkEffect(_id, function(_id) {
-		var _efx = _effectName;
-		with(_id)
-			ds_list_add(Effects, _efx);
-	});
-}
-
-function destroyAllCards()
-{
-	with (objAttackCard)
-				instance_destroy(id);
-	with (objBlockCard)
-		instance_destroy(id);
-	with (objMiscCard)
-		instance_destroy(id);
+	ds_list_delete(Effects, _effectIndex);
 }
