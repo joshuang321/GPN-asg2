@@ -119,7 +119,7 @@
     "spriteId": {"name":"player_exhaust","path":"sprites/player_exhaust/player_exhaust.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 30.0,
+    "playbackSpeed": 15.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
