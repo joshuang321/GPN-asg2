@@ -11,14 +11,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "sfxbossstage.ogg",
-  "duration": 72.1407,
+  "soundFile": "sfxnormalstage3.mp3",
+  "duration": 129.93306,
   "parent": {
     "name": "Stage3",
     "path": "folders/Sounds/Stages/Stage3.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sfxBossStage",
+  "name": "sfxNormalStage3",
   "tags": [],
   "resourceType": "GMSound",
 }
