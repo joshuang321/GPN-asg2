@@ -9,8 +9,8 @@ if (noone != global.Game.level.enemySelected &&
 	with (global.Game.level.enemySelected)
 	{
 		audio_play_sound(playerWeakening, 0, false);
-		addEffect("Weakened", { amt : _weaken_percent,
-			turns : _turns });
+		var _effect = { amt : _weaken_percent, turns : _turns };
+		addEffect("Weakened", _effect);
 	}
 	instance_destroy(id);
 }

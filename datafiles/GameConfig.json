@@ -196,6 +196,26 @@
 		}
 	],
 
+	"story" : [{
+		"bgm" : "StoryOpening",
+		"paragraphs" : [{
+			"background" : "Paragraph11",
+			"text" : "Like the legend talls, hundreds of hundreds years ago, there was once a heinous goddess, Satan, spreading massacre and atrocity on our land, Fonolia. He was the one and the only goddess of betrayal, madness and violence. For all his acts of ruthless and evil he was slain and sealed by other gods, at the infamous mountain of pure death and curse. However, before he gone, he left with an omen that a thousand year after, he will return with his anger and revenge to all the living creatures."
+		}, {
+			"background" : "Paragraph12",
+			"text" : "However, the omen is not unbreakable. Magus has predicted that there will be a brave hero turned out, collecting 4 artifacts that once slain Satan, strengthening the seal so that Satan's ambition will never come true. As the wheel of fate rolls on, the Day Omen is reaching soon. The legend of the chosen one, Eric, starts his journey..."
+		}]
+	}, {
+	}],
+
+	"final_cutscene" : {
+		"bgm" : "StoryEnding",
+		"paragraphs" : [{
+			"background" : "ParagraphEnding",
+			"text" : "With the power of the 4 artifacts, Eric managed to strengthen the seal on Satan. Folinia is once again saved from disasters. But the story of Eric will continue..."
+		}]
+	},
+
 	"stages" : [{
 		"start_at" : 0,
 		"gold" : 4
@@ -208,6 +228,9 @@
 	}, {
 		"start_at" : 15,
 		"gold" : 10
+	}, {
+		"start_at" : 20,
+		"gold" : -1
 	}],
 
 	"background" : [{

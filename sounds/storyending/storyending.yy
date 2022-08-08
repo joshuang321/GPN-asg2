@@ -1,7 +1,7 @@
 {
   "conversionMode": 0,
   "compression": 0,
-  "volume": 0.53,
+  "volume": 1.0,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -11,14 +11,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "enemydeath.ogg",
-  "duration": 3.000068,
+  "soundFile": "storyending.ogg",
+  "duration": 75.78966,
   "parent": {
-    "name": "Enemy",
-    "path": "folders/Sounds/Enemy.yy",
+    "name": "Story",
+    "path": "folders/Sounds/Story.yy",
   },
   "resourceVersion": "1.0",
-  "name": "enemyDeath",
+  "name": "StoryEnding",
   "tags": [],
   "resourceType": "GMSound",
 }

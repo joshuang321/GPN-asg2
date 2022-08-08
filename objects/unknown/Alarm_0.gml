@@ -10,18 +10,23 @@ if (global.Game.level.gameState == _GAMESTATE_DEFEAT)
 }
 else if (global.Game.level.gameState == _GAMESTATE_VICTORY)
 {
+	var _amt  = 0;
 	for (var _i=0;
 		_i<array_length(global.GameConfig.stages);
 		_i++)
-		if (global.GameConfig.stages[_i] <= global.Game.curLevel)
-			global.Game.player_gold += global.GameConfig.stages[_i].gold;
-			
+		if (global.GameConfig.stages[_i].start_at > global.Game.curLevel)
+			_amt = global.GameConfig.stages[_i-1].gold;
+	
 	global.Game.curLevel++;
+	global.Game.player_gold += _amt;
 	
 	instance_activate_layer("GameVictory");
 	layer_set_visible("GameVictory", true);
+	instance_create_layer(0, 400, "GameVictory", GoldText, { amt : _amt });
+	
 	if (global.Game.curLevel == array_length(global.GameLevel))
-		instance_destroy(inst_7EA4D2AC);
+		instance_destroy(inst_18143139);
+	
 	layer_background_sprite(layer_background_get_id("Background"),
 		GameVictory);
 	audio_play_sound(gameVictory, 0, false);

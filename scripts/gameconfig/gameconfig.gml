@@ -119,6 +119,17 @@ function cGame() constructor
 
 function NewLevel(_levelNo)
 {
+	if (2 == global.Game.curLevel mod 5)
+	{
+		room_goto(ShopRoom);
+		return;
+	}
+	else if (global.Game.curLevel == array_length(global.GameLevel))
+	{
+		room_goto(StoryRoom);
+		return;
+	}
+	
 	global.Game.level = new Level();
 	
 	var _level = getLevel(_levelNo);
@@ -147,6 +158,34 @@ function loadNewGame()
 	global.Game = new cGame();
 }
 
+function loadStory()
+{
+	global.Game.storyIndex = 0;
+	audio_play_sound(asset_get_index(global.Game.curLevel == array_length(global.GameLevel)
+		? global.GameConfig.final_cutscene.bgm :global.GameConfig.story[global.Game.curLevel div 5].bgm),
+		0, true);
+}
+
+function loadNextParagraph()
+{
+	var _curParagraph = global.Game.curLevel == array_length(global.GameLevel) ? global.GameConfig.final_cutscene.paragraphs :
+	global.GameConfig.story[global.Game.curLevel div 5].paragraphs;
+	
+	if (global.Game.storyIndex == array_length(_curParagraph))
+	{
+		if (global.Game.curLevel == array_length(global.GameLevel))
+			room_goto(MapRoom);
+		else
+			room_goto(LevelRoom);
+		return;
+	}
+	
+	layer_background_sprite(layer_background_get_id("Background"), asset_get_index(
+		_curParagraph[global.Game.storyIndex].background));
+
+	global.Game.storyIndex++;
+}
+
 function getLevel(_levelNo)
 {
 	return (array_length(global.GameLevel) < (_levelNo + 1))? noone :
@@ -155,15 +194,19 @@ function getLevel(_levelNo)
 
 function setBackground(_level)
 {
-	for (var _i=0;
+	if (2 != global.Game.curLevel mod 5 &&
+		global.Game.curLevel != array_length(global.GameLevel))
+	{
+		for (var _i=0;
 		_i<array_length(global.GameConfig.background);
 		_i++)
-	{
-		if (_level.background_id = global.GameConfig.background[_i].id)
 		{
-			layer_background_sprite(layer_background_get_id("Background"),
-				asset_get_index(global.GameConfig.background[_i].sprite));
-			audio_play_sound(asset_get_index(global.GameConfig.background[_i].bgm), 0, true);
+			if (_level.background_id = global.GameConfig.background[_i].id)
+			{
+				layer_background_sprite(layer_background_get_id("Background"),
+					asset_get_index(global.GameConfig.background[_i].sprite));
+				audio_play_sound(asset_get_index(global.GameConfig.background[_i].bgm), 0, true);
+			}
 		}
 	}
 }

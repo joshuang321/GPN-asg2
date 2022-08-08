@@ -71,6 +71,15 @@ function startNewGameState(_gameState)
 			break;
 				
 		case _GAMESTATE_ENEMY_END:
+			for (var _i=0;
+				_i<ds_list_size(global.Game.level.enemies);
+				_i++)
+				with (global.Game.level.enemies[|_i])
+					doEffectTurn();
+			
+			with (global.Game.level.playerInst)
+				doEffectTurn();
+			
 			layer_set_visible("Menu", true);
 			instance_activate_layer("Menu");
 			global.Game.level.player_skillpts = global.Game.player_skillpts;
@@ -122,6 +131,27 @@ function instantiateCard(_x, _Card)
 		_Card);
 }
 
+function doEffectTurn()
+{
+	var _exhaustedIndex = checkEffect("Exhausted");
+	if (-1 != _exhaustedIndex)
+	{
+		var _effect = Effects[| _exhaustedIndex];
+		Effects[| _exhaustedIndex].data.turns --;
+		if (0 == Effects[|_exhaustedIndex].data.turns)
+			removeEffect(_exhaustedIndex);
+	}
+				
+	var _weakenedIndex = checkEffect("Weakened");
+	if (-1 != _weakenedIndex)
+	{
+		var _effect = Effects[| _weakenedIndex];
+		Effects[| _weakenedIndex].data.turns --;
+		if (0 == Effects[|_weakenedIndex].data.turns)
+			removeEffect(_weakenedIndex);
+	}
+}
+
 function getEffectId(_effect)
 {
 	for (var _i=0;
@@ -140,6 +170,16 @@ function getEffectSprite(_effectId)
 		_i++)
 		if (_effectId == global.GameConfig.effect[_i].id)
 			return global.GameConfig.effect[_i].sprite;
+	return noone;
+}
+
+function getEffectNameFromId(_effectId)
+{
+	for (var _i=0;
+		_i<array_length(global.GameConfig.effect);
+		_i++)
+		if (_effectId == global.GameConfig.effect[_i].id)
+			return global.GameConfig.effect[_i].name;
 	return noone;
 }
 
@@ -165,6 +205,8 @@ function addEffect(_effect, _data)
 		ds_list_add(Effects, { effect_id :_effectId, data : _data });
 		show_debug_message("sprite_index: " + string(asset_get_index(getEffectSprite(_effectId))));
 		startAnimation(asset_get_index(getEffectSprite(_effectId)));
+		instance_create_layer(x, y, "Values", floatingEffect, { effect : _effect + "!",
+			color : #FFFF44 });
 	}
 	else
 	show_debug_message("effect not found");
@@ -172,5 +214,22 @@ function addEffect(_effect, _data)
 
 function removeEffect(_effectIndex)
 {
+	instance_create_layer(x, y, "Values", floatingEffect, { effect :
+		getEffectNameFromId(Effects[| _effectIndex].effect_id) +
+		" fades", color : #DDDDDD });
 	ds_list_delete(Effects, _effectIndex);
+}
+
+function handleStoryButton()
+{
+	if (sAnchor == sprite_index)
+	{	
+		if (0 == global.Game.curLevel mod 5)
+			room_goto(StoryRoom);
+		else
+		{	
+			audio_play_sound(buttonClick, 0, false);
+			room_goto(LevelRoom);
+		}
+	}
 }

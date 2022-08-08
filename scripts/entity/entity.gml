@@ -13,6 +13,8 @@ function entityDestroy()
 function enemyDestroy()
 {
 	entityDestroy();
+	global.Game.level.enemySelected = noone;
+	
 	if (global.Game.level.gameState != _GAMESTATE_DEFEAT)
 		audio_play_sound(enemyDeath, 0, false);
 	ds_list_delete(global.Game.level.enemies, ds_list_find_index(global.Game.level.enemies, id));
@@ -39,15 +41,12 @@ function dealDamage(_self, _damage)
 		with (_self)
 		{
 			var _exhaustedIndex = checkEffect("Exhausted");
+			var _effect = Effects[| _exhaustedIndex];
 			show_debug_message("index: " + string(_exhaustedIndex));
 				
 				
 			if (-1 != _exhaustedIndex)
-			{
-				var _effect = Effects[| _exhaustedIndex];
-				Effects[| _exhaustedIndex].data.turns --;
-				if (0 == Effects[|_exhaustedIndex].data.turns)
-					removeEffect(_exhaustedIndex);
+			{	
 				
 				_damage *= (1 - _effect.data.amt);
 				show_debug_message("Enemy Exhausted!");
@@ -57,14 +56,10 @@ function dealDamage(_self, _damage)
 	with (id)
 	{
 		var _weakenedIndex = checkEffect("Weakened");
+		var _effect = Effects[| _weakenedIndex];
 		
 		if (-1 != _weakenedIndex)
-		{
-			var _effect = Effects[| _weakenedIndex];
-			Effects[| _weakenedIndex].data.turns --;
-			if (0 == Effects[|_weakenedIndex].data.turns)
-				removeEffect(_weakenedIndex);
-				
+		{		
 			_damage *= (1 + _effect.data.amt);
 			show_debug_message("Enemy Weakened!");
 		}
