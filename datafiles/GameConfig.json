@@ -157,28 +157,41 @@
 		"sprite": "Enemy2",
 		"data" : {
 			"dmg" : 2,
-			"extra_cost" : 2
+			"apply_at" : 0.5,
+			"extra_cost" : 1,
+			"turns" : 3
 		}
 	}, {
 		"id": 4,
 		"obj" : "eBoss2",
 		"sprite": "Boss2",
 		"data" : {
-			"dmg" : 6
+			"dmg" : 6,
+			"apply_at" : 0.5,
+			"extra_cost" : 2,
+			"turns" : 3
 		}
 	}, {
 		"id": 5,
 		"obj" : "eEnemy3",
 		"sprite": "Enemy3",
 		"data" : {
-			"dmg" : 5
+			"dmg" : 5,
+			"apply_at" : 0.5,
+			"numcards" : 2,
+			"burning_dmg" : 3,
+			"turns" : 3
 		}
 	}, {
 		"id": 6,
 		"obj" : "eBoss3",
 		"sprite": "Boss3",
 		"data" : {
-			"dmg" : 5
+			"dmg" : 5,
+			"apply_at" : 0.5,
+			"numcards" : 3,
+			"burning_dmg" : 7,
+			"turns" : 3
 		}
 	}, {
 		"id": 7,
@@ -186,14 +199,19 @@
 		"sprite": "Enemy4",
 		"data" : {
 			"dmg" : 5,
-			"miss_probability" : 0.34
+			"apply_at" : 0.5,
+			"miss_probability" : 0.2,
+			"turns" : 3
 		}
 	}, {
 		"id": 8,
 		"obj" : "eBoss4",
 		"sprite": "Boss4",
 		"data" : {
-			"dmg" : 5
+			"dmg" : 5,
+			"apply_at" : 0.7,
+			"miss_probability" : 0.7,
+			"turns" : 5
 		}
 	}],
 
@@ -208,15 +226,19 @@
 		}, {
 			"id" : 3,
 			"name" : "Reflective",
-			"sprite" : "boss_reflect"
+			"sprite" : "buff"
 		}, {
 			"id" : 4,
 			"name" : "Hypnotized",
-			"sprite" : "sorcerer_hypnotize"
+			"sprite" : "mage_skill"
 		}, {
 			"id" : 5,
-			"name" : "Darked",
-			"sprite" : "dark"
+			"name" : "Burned",
+			"sprite" : "burn"
+		}, {
+			"id" : 6,
+			"name" : "Darkened",
+			"sprite" : "ghost_skill"
 		}
 	],
 
