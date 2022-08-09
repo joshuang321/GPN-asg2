@@ -134,6 +134,8 @@ function cGame() constructor
 		}
 	}
 	temp_shop_offset = 0;
+	temp_deck_offset = 0;
+	temp_inventory_offset = 0;
 	
 	player_gold = 0;
 	curLevel = 0;

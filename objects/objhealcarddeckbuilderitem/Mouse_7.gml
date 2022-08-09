@@ -1,0 +1,2 @@
+pressed = false;
+handleCardTransfer();

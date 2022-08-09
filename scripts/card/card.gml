@@ -21,6 +21,21 @@ function instantiateCardItem(_x, _y, _Card)
 		_Card);
 }
 
+function instantiateDeckCardItem(_x, _y, _Card)
+{
+	show_debug_message(_Card.obj);
+	return instance_create_layer(_x, _y, "DeckCards", asset_get_index(_Card.obj + "DeckBuilderItem"),
+		_Card);
+}
+
+function instantiateInventoryCardItem(_x, _y, _Card)
+{
+	show_debug_message(_Card.obj);
+	return instance_create_layer(_x, _y, "InventoryCards", asset_get_index(_Card.obj + "DeckBuilderItem"),
+		_Card);
+}
+
+
 function nextStep()
 {
 	
@@ -84,4 +99,66 @@ function createWithOffset(_offset)
 		}
 		_y += 294;
 	}
+}
+
+function createDeckWithOffset(_offset)
+{
+	var _y = 64;
+	var _x = 416;
+	
+	for (var _i=0;
+		_i<4;
+		_i++)
+	{
+		show_debug_message(_offset + _i);
+		if ((_offset + _i) == ds_list_size(global.Game.player_card))
+			return;
+			
+		var _card_obj_index = instantiateDeckCardItem(_x, _y,
+			global.Game.player_card[| (_offset + _i)]);
+		with (_card_obj_index)
+			card_index = _offset + _i;
+		_x += 195;
+	}
+}
+
+function createInventoryWithOffset(_offset)
+{
+	var _y = 448;
+	var _x = 416;
+	
+	for (var _i=0;
+		_i<4;
+		_i++)
+	{
+		show_debug_message(_offset + _i);
+		if ((_offset + _i) == ds_list_size(global.Game.player_card_inventory))
+			return;
+			
+		var _card_obj_index = instantiateInventoryCardItem(_x, _y,
+			global.Game.player_card_inventory[| (_offset + _i)]);
+		with (_card_obj_index)
+			card_index = _offset + _i;
+		_x += 195;
+	}
+}
+
+function handleCardTransfer()
+{
+	if (layer_get_id("DeckCards") == layer)
+	{
+		var _Card = global.Game.player_card[| card_index];
+		ds_list_delete(global.Game.player_card, card_index);
+		ds_list_add(global.Game.player_card_inventory, _Card);
+	}
+	else if (global.GameConfig.max_card_slot > ds_list_size(global.Game.player_card))
+	{
+		_Card = global.Game.player_card_inventory[| card_index];
+		ds_list_delete(global.Game.player_card_inventory, card_index);
+		ds_list_add(global.Game.player_card, _Card);
+	}
+	layer_destroy_instances("DeckCards");
+	layer_destroy_instances("InventoryCards");
+	createDeckWithOffset(global.Game.temp_deck_offset);
+	createInventoryWithOffset(global.Game.temp_inventory_offset);
 }
