@@ -34,8 +34,7 @@ else if (global.Game.level.gameState == _GAMESTATE_VICTORY)
 		with (inst_7EA4D2AC)
 			menu_string = "Final Cutscene";
 	}
-	
-	if (0 == global.Game.curLevel mod 5)
+	else if (0 == global.Game.curLevel mod 5)
 		instance_deactivate_object(inst_7EA4D2AC);
 	
 	layer_background_sprite(layer_background_get_id("Background"),

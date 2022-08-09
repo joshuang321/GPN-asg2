@@ -109,8 +109,8 @@
 			"inc_step": 1
 		},
 		"card_cost" : {
-			"init" : 3,
-			"inc_step" : 0
+			"init" : 1,
+			"inc_step" : 0.5
 		},
 		"upgrade_cost" : {
 			"init" : 1,
@@ -122,12 +122,12 @@
 		"card_type" : 3,
 		"sprite": "cDesperateAttack",
 		"data": {
-			"init_dmg": 15,
-			"inc_step": 2
+			"init_dmg": 14,
+			"inc_step": 1
 		},
 		"card_cost" : {
-			"init" : 2,
-			"inc_step" : 0
+			"init" : 1,
+			"inc_step" : 0.5
 		},
 		"upgrade_cost" : {
 			"init" : 1,
@@ -140,79 +140,60 @@
 		"obj" : "eEnemy1",
 		"sprite": "Enemy1",
 		"data" : {
-			"attack_prob_max" : 0.84,
-			"attack_prob_min" : 0.76,
-			"dmg" : 2
+			"dmg" : 1
 		}
 	}, {
 		"id": 2,
 		"obj" : "eBoss1",
 		"sprite": "Boss1",
 		"data" : {
-			"attack_prob_max" : 0.96,
-			"attack_prob_min" : 0.86,
-			"buff_at" : 0.5,
-			"dmg" : 5
+			"dmg" : 5,
+			"reflect_at" : 0.5,
+			"attacks" : 5
 		}
 	}, {
 		"id": 3,
 		"obj" : "eEnemy2",
 		"sprite": "Enemy2",
 		"data" : {
-			"attack_prob_max" : 0.96,
-			"attack_prob_min" : 0.86,
-			"buff_at" : 0.5,
-			"dmg" : 3
+			"dmg" : 2,
+			"extra_cost" : 2
 		}
 	}, {
 		"id": 4,
 		"obj" : "eBoss2",
 		"sprite": "Boss2",
 		"data" : {
-			"attack_prob_max" : 0.96,
-			"attack_prob_min" : 0.86,
-			"buff_at" : 0.5,
-			"dmg" : 7
+			"dmg" : 6
 		}
 	}, {
 		"id": 5,
 		"obj" : "eEnemy3",
 		"sprite": "Enemy3",
 		"data" : {
-			"attack_prob_max" : 0.96,
-			"attack_prob_min" : 0.86,
-			"buff_at" : 0.5,
-			"dmg" : 4
+			"dmg" : 5
 		}
 	}, {
 		"id": 6,
 		"obj" : "eBoss3",
 		"sprite": "Boss3",
 		"data" : {
-			"attack_prob_max" : 0.96,
-			"attack_prob_min" : 0.86,
-			"buff_at" : 0.5,
-			"dmg" : 8
+			"dmg" : 5
 		}
 	}, {
 		"id": 7,
 		"obj" : "eEnemy4",
 		"sprite": "Enemy4",
 		"data" : {
-			"attack_prob_max" : 0.96,
-			"attack_prob_min" : 0.86,
-			"buff_at" : 0.5,
-			"dmg" : 5
+			"dmg" : 5,
+			"miss_probability" : 0.34
 		}
 	}, {
 		"id": 8,
 		"obj" : "eBoss4",
 		"sprite": "Boss4",
 		"data" : {
-			"attack_prob_max" : 0.96,
-			"attack_prob_min" : 0.86,
-			"buff_at" : 0.5,
-			"dmg" : 10
+			"dmg" : 5
 		}
 	}],
 
@@ -224,6 +205,18 @@
 			"id": 2,
 			"name": "Exhausted",
 			"sprite": "player_exhaust"
+		}, {
+			"id" : 3,
+			"name" : "Reflective",
+			"sprite" : "boss_reflect"
+		}, {
+			"id" : 4,
+			"name" : "Hypnotized",
+			"sprite" : "sorcerer_hypnotize"
+		}, {
+			"id" : 5,
+			"name" : "Darked",
+			"sprite" : "dark"
 		}
 	],
 
@@ -262,16 +255,16 @@
 
 	"stages" : [{
 		"start_at" : 0,
-		"gold" : 2
-	}, {
-		"start_at" : 5,
-		"gold" : 3
-	}, {
-		"start_at" : 10,
 		"gold" : 4
 	}, {
+		"start_at" : 5,
+		"gold" : 6
+	}, {
+		"start_at" : 10,
+		"gold" : 8
+	}, {
 		"start_at" : 15,
-		"gold" : 5
+		"gold" : 10
 	}, {
 		"start_at" : 20,
 		"gold" : -1

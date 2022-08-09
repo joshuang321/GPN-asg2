@@ -13,5 +13,4 @@ if (noone != global.Game.level.enemySelected &&
 			turns : _turns });
 			
 	}
-	instance_destroy(id);
 }

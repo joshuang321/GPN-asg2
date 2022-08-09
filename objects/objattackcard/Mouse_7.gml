@@ -10,5 +10,4 @@ if (noone != global.Game.level.enemySelected &&
 		dealDamage(noone, _dmg);
 	}
 	global.Game.level.enemySelected = noone;
-	instance_destroy(id);
 }

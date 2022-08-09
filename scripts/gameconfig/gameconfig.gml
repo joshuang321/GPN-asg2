@@ -84,8 +84,7 @@ function Level() constructor
 	randomize();
 	ds_list_shuffle(global.Game.player_card);
 	
-	playerInst = instance_create_layer(118, Y_STANDING,
-		"Instances", ePlayer,
+	playerInst = instance_create_layer(118, Y_STANDING, "Instances", ePlayer,
 		new GamePlayer(global.Game.player_health));
 	
 	for (var _i=0;
@@ -138,7 +137,7 @@ function cGame() constructor
 	temp_inventory_offset = 0;
 	
 	player_gold = 0;
-	curLevel = 0;
+	curLevel = 19;
 }
 
 function NewLevel(_levelNo)
@@ -171,7 +170,7 @@ function NewLevel(_levelNo)
 		ds_list_add(global.Game.level.enemies,
 			instance_create_layer(_x, _y, "Instances", asset_get_index(_enemy.obj),
 				new GameEnemy(_enemy.data, _level.enemies[_i].health)));
-		_x -= 16;
+		_x -= 50;
 	}
 	startNewGameState(_GAMESTATE_DRAW);
 }

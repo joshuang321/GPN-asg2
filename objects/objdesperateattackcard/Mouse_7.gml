@@ -18,5 +18,4 @@ if (noone != global.Game.level.enemySelected &&
 		startAnimation(player_desperateattack);   
 		dealDamage(noone, _dmg);
 	}
-	instance_destroy(id);
 }
