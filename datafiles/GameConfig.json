@@ -190,7 +190,7 @@
 			"dmg" : 8,
 			"apply_at" : 0.5,
 			"numcards" : 3,
-			"burning_dmg" : 5,
+			"burning_dmg" : 6,
 			"turns" : 3
 		}
 	}, {
@@ -201,7 +201,7 @@
 			"dmg" : 5,
 			"apply_at" : 0.5,
 			"miss_probability" : 0.3,
-			"turns" : 3
+			"turns" : 5
 		}
 	}, {
 		"id": 8,
@@ -211,7 +211,7 @@
 			"dmg" : 7,
 			"apply_at" : 0.7,
 			"miss_probability" : 0.5,
-			"turns" : 5
+			"turns" : 7
 		}
 	}],
 
@@ -260,7 +260,7 @@
 		"bgm" : "StoryOpening",
 		"paragraphs" : [{
 			"background" : "Paragraph11",
-			"text" : "Like the legend talls, hundreds of hundreds years ago, there was once a heinous goddess, Satan, spreading massacre and atrocity on our land, Fonolia. He was the one and the only goddess of betrayal, madness and violence. For all his acts of ruthless and evil he was slain and sealed by other gods, at the infamous mountain of pure death and curse. However, before he gone, he left with an omen that a thousand year after, he will return with his anger and revenge to all the living creatures."
+			"text" : "Like the legend tells, hundreds of hundreds years ago, there was once a heinous goddess, Satan, spreading massacre and atrocity on our land, Fonolia. He was the one and the only goddess of betrayal, madness and violence. For all his acts of ruthless and evil he was slain and sealed by other gods, at the infamous mountain of pure death and curse. However, before he gone, he left with an omen that a thousand year after, he will return with his anger and revenge to all the living creatures."
 		}, {
 			"background" : "Paragraph12",
 			"text" : "However, the omen is not unbreakable. Magus has predicted that there will be a brave hero turned out, collecting 4 artifacts that once slain Satan, strengthening the seal so that Satan's ambition will never come true. As the wheel of fate rolls on, the Day Omen is reaching soon. The legend of the chosen one, Eric, starts his journey..."

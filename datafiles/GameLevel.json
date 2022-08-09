@@ -46,7 +46,7 @@
         "enemies" : [
             {
                 "id" : 2,
-                "health" : 20
+                "health" : 25
             },
             {
                 "id" : 1,
@@ -168,7 +168,7 @@
         "enemies" : [
             {
                 "id" : 7,
-                "health" : 18
+                "health" : 20
             }
         ]
     }, {
@@ -176,10 +176,10 @@
         "enemies" : [
             {
                 "id" : 7,
-                "health" : 18
+                "health" : 20
             }, {
                 "id" : 7,
-                "health" : 18
+                "health" : 20
             }
         ]
     }, {
@@ -198,10 +198,10 @@
         "enemies" : [
             {
                 "id" : 7,
-                "health" : 20
+                "health" : 25
             }, {
                 "id" : 7,
-                "health" : 20
+                "health" : 25
             }
         ]
     }, {
@@ -209,7 +209,7 @@
         "enemies" : [
             {
                 "id" : 8,
-                "health" : 50
+                "health" : 60
             }
         ]
     }
