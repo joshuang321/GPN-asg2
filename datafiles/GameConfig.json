@@ -227,12 +227,16 @@
 	],
 
 	"story" : [{
+		"background" : "CG1",
 		"text" :  "This is a wild area governed by a group of bandits called Black scorpions. Burning, killing and pillaging are their everyday life. The first artifact: Titan's Grip is held by the leader of Black scorpions - Zoe. He has been abusing the power for his own ambition, causing the towns near to this area suffering from his ruthless behaviour. It's time for a hero to stop his enormity."
 	}, {
+		"background" : "CG2",
 		"text" : "The second artifact - Staff of Allknowing is in the hands of the fanatic of madness who has an ability to turn others into a chaotic state of mind. His goal is to turn Folonia into a land of void. His followers are mages who can handle flame very skillfully. It's not too late to stop his crazy idea from happening."
 	}, {
+		"background" : "CG3",
 		"text" : "Deep inside the cave of Volcano Soren, the third artifact - Golden Goblet is guarded by the greedy dragon Doran. It has been robbing treasures from all over the land and keep them inside its cave to fulfill its vanity. Since Soren is a living volcano, the existance of ifrit --- an unique species of fire sprite --- is inevitable. However, ifrits are known for their berserk and unfriendly nature. Maybe it's time for Doran's treasures to change hands."
 	}, {
+		"background" : "CG4",
 		"text" : "It is said that the last artifact - Death Reaper was kept in Mount Heldan. Recently, miners from Mount Heldan has reported some horrifying scenes happening in front of their eyes. Ghosts from other dimensions are gushed from the depth of the mine. Some said that they have enraged the goddess, but some survivors from the mine claimed that they digged out a crack that links between fonolia and the land of death. Before they ran away, they saw a slim shadow holding a giant reaper climbing out from the crack. It's time to discover the truth on that mountain."
 	}],
 

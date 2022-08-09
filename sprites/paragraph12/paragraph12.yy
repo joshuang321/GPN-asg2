@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Cutscene1",
-    "path": "folders/Sprites/UI/Menu/Story/Cutscene1.yy",
+    "name": "Story",
+    "path": "folders/Sprites/UI/Menu/Story.yy",
   },
   "resourceVersion": "1.0",
   "name": "Paragraph12",

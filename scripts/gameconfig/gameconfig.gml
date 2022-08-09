@@ -135,7 +135,7 @@ function cGame() constructor
 	}
 	temp_shop_offset = 0;
 	
-	player_gold = 5;
+	player_gold = 0;
 	curLevel = 0;
 }
 
@@ -206,7 +206,8 @@ function loadNextParagraph()
 
 function loadCutscene()
 {
-	
+	layer_background_sprite(layer_background_get_id("Background"), asset_get_index(
+		 global.GameConfig.story[floor(global.Game.curLevel/5)].background));
 }
 
 function getLevel(_levelNo)

@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"55b341f7-4c6e-4f25-9402-f96a0e646d07","path":"sprites/Paragraph11/Paragraph11.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"55b341f7-4c6e-4f25-9402-f96a0e646d07","path":"sprites/Paragraph11/Paragraph11.yy",},"LayerId":{"name":"fa476791-ad4e-4af8-8dfd-ea0942bb9a3a","path":"sprites/Paragraph11/Paragraph11.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Paragraph11","path":"sprites/Paragraph11/Paragraph11.yy",},"resourceVersion":"1.0","name":"55b341f7-4c6e-4f25-9402-f96a0e646d07","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"8d9bef77-9d01-4725-ae7f-612020925e5d","path":"sprites/CG3/CG3.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"8d9bef77-9d01-4725-ae7f-612020925e5d","path":"sprites/CG3/CG3.yy",},"LayerId":{"name":"0de27118-9004-434f-97d0-f4dbff18b1ce","path":"sprites/CG3/CG3.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"CG3","path":"sprites/CG3/CG3.yy",},"resourceVersion":"1.0","name":"8d9bef77-9d01-4725-ae7f-612020925e5d","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"Paragraph11","path":"sprites/Paragraph11/Paragraph11.yy",},
+    "spriteId": {"name":"CG3","path":"sprites/CG3/CG3.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"4cc0f296-92ce-4f53-abc5-28066007d488","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"55b341f7-4c6e-4f25-9402-f96a0e646d07","path":"sprites/Paragraph11/Paragraph11.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"d7bb94d6-00e3-43a9-9db8-288f7444bae2","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8d9bef77-9d01-4725-ae7f-612020925e5d","path":"sprites/CG3/CG3.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,22 +58,22 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"Paragraph11","path":"sprites/Paragraph11/Paragraph11.yy",},
+    "parent": {"name":"CG3","path":"sprites/CG3/CG3.yy",},
     "resourceVersion": "1.4",
-    "name": "Paragraph11",
+    "name": "CG3",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"fa476791-ad4e-4af8-8dfd-ea0942bb9a3a","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"0de27118-9004-434f-97d0-f4dbff18b1ce","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Story",
-    "path": "folders/Sprites/UI/Menu/Story.yy",
+    "name": "CG",
+    "path": "folders/Sprites/UI/Menu/Story/CG.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Paragraph11",
+  "name": "CG3",
   "tags": [],
   "resourceType": "GMSprite",
 }
