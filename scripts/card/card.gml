@@ -47,16 +47,21 @@ function nextStep()
 	}
 }
 
+function calculateNormalCost()
+{
+	return  card_cost.init + level * card_cost.inc_step;
+}
+
 function calculateCost()
 {
-	var _card_cost = card_cost.init + level * card_cost.inc_step;
+	var _card_cost = calculateNormalCost();
 	with (global.Game.level.playerInst)
 	{
 		var _effectIndex = checkEffect("Hypnotized");
 		if (-1 != _effectIndex)
 		{
 			var _effect = Effects[| _effectIndex];
-			_card_cost += _effect.extra_cost;
+			_card_cost += _effect.data.extra_cost;
 		}
 	}
 	return _card_cost;
@@ -64,23 +69,30 @@ function calculateCost()
 
 function useCard()
 {
-	instance_destroy(id);
 	var _card_cost = calculateCost();
-	
+	show_debug_message(_card_cost);
 	var _useCard = (global.Game.level.player_skillpts < _card_cost)? false : true;
 	if (_useCard)
+	{
 		global.Game.level.player_skillpts -= _card_cost;
+		instance_destroy(id);
+	}
 	else
 		audio_play_sound(noEnergy, 0, false);
 		
 	with (global.Game.level.playerInst)
 	{
-		var _effectIndex = checkEffect("Darked");
+		var _effectIndex = checkEffect("Darkened");
 		if (-1 != _effectIndex)
 		{
 			var _effect = Effects[| _effectIndex];
-			_useCard = _useCard ? (_effect.miss_probability<random(1.0)? false :
-				true) : false;
+			var _prevuseCard = _useCard;
+			
+			_useCard = _useCard ? (_effect.data.miss_probability>random(1.0)?
+				false : true) : false;
+			if (_prevuseCard && !_useCard)
+				with(global.Game.level.playerInst)
+					showEffect("Miss");
 		}
 	}
 	
@@ -132,7 +144,7 @@ function createWithOffset(_offset)
 
 function createDeckWithOffset(_offset)
 {
-	var _y = 64;
+	var _y = 160;
 	var _x = 416;
 	
 	for (var _i=0;

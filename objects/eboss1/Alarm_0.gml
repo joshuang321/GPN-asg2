@@ -4,9 +4,9 @@ var _self = id;
 if (!hasBuffed &&
 	curhealth/maxhealth <= data.reflect_at)
 {
+	hasBuffed = true;
 	addEffect("Reflective", { attacks: 
 		data.attacks });
-	startAnimation(buff);
 }
 else
 {
