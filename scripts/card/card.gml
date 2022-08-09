@@ -67,7 +67,7 @@ function levelUpCard()
 			upgrade_cost.inc_step;
 		level ++;
 		audio_play_sound(upgradeCard, 0, false);
-		global.Game.player_card[| card_index].level++;
+		global.Game.temp_shop_inventory[| card_index].level++;
 	}
 	else
 		audio_play_sound(notEnoughGold, 0, false);
