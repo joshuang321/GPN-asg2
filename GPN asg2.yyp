@@ -122,6 +122,7 @@
     {"id":{"name":"sfxBossStage3","path":"sounds/sfxBossStage3/sfxBossStage3.yy",},"order":0,},
     {"id":{"name":"player_heal","path":"sprites/player_heal/player_heal.yy",},"order":3,},
     {"id":{"name":"BossStage3","path":"sprites/BossStage3/BossStage3.yy",},"order":5,},
+    {"id":{"name":"firedmg","path":"sprites/firedmg/firedmg.yy",},"order":13,},
     {"id":{"name":"pauseShopButton","path":"objects/pauseShopButton/pauseShopButton.yy",},"order":11,},
     {"id":{"name":"eBoss4","path":"objects/eBoss4/eBoss4.yy",},"order":1,},
     {"id":{"name":"ghost_skill","path":"sprites/ghost_skill/ghost_skill.yy",},"order":1,},
