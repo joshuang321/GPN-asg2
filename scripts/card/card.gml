@@ -47,9 +47,14 @@ function nextStep()
 	}
 }
 
+function calculateNormalCost()
+{
+	return  card_cost.init + level * card_cost.inc_step;
+}
+
 function calculateCost()
 {
-	var _card_cost = card_cost.init + level * card_cost.inc_step;
+	var _card_cost = calculateNormalCost();
 	with (global.Game.level.playerInst)
 	{
 		var _effectIndex = checkEffect("Hypnotized");

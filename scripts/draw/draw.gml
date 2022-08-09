@@ -29,6 +29,18 @@ function drawCardNumber(_number)
 		_number);
 }
 
+function drawNormalCardCost()
+{
+	var _cardCost = calculateNormalCost();
+	draw_set_font(global.uiSmallFont);
+	draw_set_color(#000000);
+	var _x = x + sprite_width - X_NUM_OFFSET - 20;
+	var _y =  y + Y_NUM_OFFSET, _cardCost;
+	
+	draw_sprite_stretched(sEnergy, 0, _x-10, _y, 35, 35);
+	draw_text(_x, _y, _cardCost);
+}
+
 function drawCardCost()
 {
 	var _cardCost = calculateCost();
