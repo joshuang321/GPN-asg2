@@ -28,7 +28,7 @@
 		},
 		"card_cost" : {
 			"init" : 1,
-			"inc_step" : 0.5
+			"inc_step" : 0
 		},
 		"upgrade_cost" : {
 			"init" : 1,
@@ -44,7 +44,7 @@
 		},
 		"card_cost" : {
 			"init" : 1,
-			"inc_step" : 0.5
+			"inc_step" : 0
 		},
 		"upgrade_cost" : {
 			"init" : 1,
@@ -60,11 +60,11 @@
 		},
 		"card_cost" : {
 			"init" : 2,
-			"inc_step" : 0.5
+			"inc_step" : 0
 		},
 		"upgrade_cost" : {
-			"init" : 1,
-			"inc_step" : 1
+			"init" : 2,
+			"inc_step" : 2
 		}
 	}, {
 		"card_id": 4,
@@ -72,16 +72,16 @@
 		"sprite": "cWeaken",
 		"data": {
 			"init_percent_weaken": 0.20,
-			"inc_step": 0.03,
+			"inc_step": 0.10,
 			"turns" : 3
 		},
 		"card_cost" : {
 			"init" : 1,
-			"inc_step" : 0.5
+			"inc_step" : 1
 		},
 		"upgrade_cost" : {
-			"init" : 1,
-			"inc_step" : 1
+			"init" : 3,
+			"inc_step" : 2
 		}
 	}, {
 		"card_id": 5,
@@ -89,16 +89,16 @@
 		"sprite": "cExhaust",
 		"data": {
 			"init_percent_exhaust": 0.20,
-			"inc_step": 0.03,
+			"inc_step": 0.10,
 			"turns" : 3
 		},
 		"card_cost" : {
 			"init" : 1,
-			"inc_step" : 0.5
+			"inc_step" : 1
 		},
 		"upgrade_cost" : {
-			"init" : 1,
-			"inc_step" : 1
+			"init" : 3,
+			"inc_step" : 2
 		}
 	}, {
 		"card_id": 6,
@@ -106,15 +106,15 @@
 		"sprite": "cFirstStrike",
 		"data": {
 			"init_dmg": 10,
-			"inc_step": 1
+			"inc_step": 2
 		},
 		"card_cost" : {
-			"init" : 1,
-			"inc_step" : 0.5
+			"init" : 3,
+			"inc_step" : 0
 		},
 		"upgrade_cost" : {
-			"init" : 1,
-			"inc_step" : 1
+			"init" : 2,
+			"inc_step" : 2
 		}
 	}, {
 		"card_id": 7,
@@ -122,16 +122,16 @@
 		"card_type" : 3,
 		"sprite": "cDesperateAttack",
 		"data": {
-			"init_dmg": 14,
-			"inc_step": 1
+			"init_dmg": 15,
+			"inc_step": 2
 		},
 		"card_cost" : {
-			"init" : 1,
-			"inc_step" : 0.5
+			"init" : 2,
+			"inc_step" : 0
 		},
 		"upgrade_cost" : {
-			"init" : 1,
-			"inc_step" : 1
+			"init" : 2,
+			"inc_step" : 2
 		}
 	}],
 
@@ -140,7 +140,7 @@
 		"obj" : "eEnemy1",
 		"sprite": "Enemy1",
 		"data" : {
-			"dmg" : 1
+			"dmg" : 2
 		}
 	}, {
 		"id": 2,
@@ -156,7 +156,7 @@
 		"obj" : "eEnemy2",
 		"sprite": "Enemy2",
 		"data" : {
-			"dmg" : 2,
+			"dmg" : 3,
 			"apply_at" : 0.5,
 			"extra_cost" : 1,
 			"turns" : 3
@@ -176,7 +176,7 @@
 		"obj" : "eEnemy3",
 		"sprite": "Enemy3",
 		"data" : {
-			"dmg" : 5,
+			"dmg" : 4,
 			"apply_at" : 0.5,
 			"numcards" : 2,
 			"burning_dmg" : 3,
@@ -187,10 +187,10 @@
 		"obj" : "eBoss3",
 		"sprite": "Boss3",
 		"data" : {
-			"dmg" : 5,
+			"dmg" : 8,
 			"apply_at" : 0.5,
 			"numcards" : 3,
-			"burning_dmg" : 7,
+			"burning_dmg" : 5,
 			"turns" : 3
 		}
 	}, {
@@ -200,7 +200,7 @@
 		"data" : {
 			"dmg" : 5,
 			"apply_at" : 0.5,
-			"miss_probability" : 0.2,
+			"miss_probability" : 0.3,
 			"turns" : 3
 		}
 	}, {
@@ -208,9 +208,9 @@
 		"obj" : "eBoss4",
 		"sprite": "Boss4",
 		"data" : {
-			"dmg" : 5,
+			"dmg" : 7,
 			"apply_at" : 0.7,
-			"miss_probability" : 0.7,
+			"miss_probability" : 0.5,
 			"turns" : 5
 		}
 	}],
@@ -277,16 +277,16 @@
 
 	"stages" : [{
 		"start_at" : 0,
-		"gold" : 4
+		"gold" : 2
 	}, {
 		"start_at" : 5,
-		"gold" : 6
+		"gold" : 3
 	}, {
 		"start_at" : 10,
-		"gold" : 8
+		"gold" : 4
 	}, {
 		"start_at" : 15,
-		"gold" : 10
+		"gold" : 5
 	}, {
 		"start_at" : 20,
 		"gold" : -1
