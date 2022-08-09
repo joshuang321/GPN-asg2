@@ -136,7 +136,7 @@ function cGame() constructor
 	temp_shop_offset = 0;
 	
 	player_gold = 5;
-	curLevel = 2;
+	curLevel = 0;
 }
 
 function NewLevel(_levelNo)
