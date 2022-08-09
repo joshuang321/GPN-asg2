@@ -9,6 +9,7 @@ if (!hasUsed &&
 	curhealth/maxhealth < data.apply_at)
 {
 	hasUsed = true;
+	audio_play_sound(mageSkill, 0, false);
 	with (global.Game.level.playerInst)
 		addEffect("Hypnotized", { extra_cost : _extra_cost,
 			turns : _turns });

@@ -10,7 +10,7 @@ function cardInit()
 
 function instantiateCard(_x, _Card)
 {
-	instance_create_layer(_x, 864, "Cards", asset_get_index(_Card.obj),
+	return instance_create_layer(_x, 864, "Cards", asset_get_index(_Card.obj),
 		_Card);
 }
 
@@ -69,6 +69,17 @@ function calculateCost()
 
 function useCard()
 {
+	if (variable_instance_exists(id, "dmg"))
+	{
+		var _dmg = dmg;
+		with(global.Game.level.playerInst)
+		{
+			audio_play_sound(ifritAttack, 0, false);
+			startAnimation(ifrit_attack);
+			dealDamage(noone, _dmg);
+		}
+	}
+	
 	var _card_cost = calculateCost();
 	show_debug_message(_card_cost);
 	var _useCard = (global.Game.level.player_skillpts < _card_cost)? false : true;

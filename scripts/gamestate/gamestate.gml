@@ -24,16 +24,39 @@ function startNewGameState(_gameState)
 				block = 0;
 			
 			audio_play_sound(cardDrawing, 1, false);
+			
 			global.Game.level.cardArray = chooseCards(4);
+			var _cardIndexes = array_create(array_length(global.Game.level.cardArray));
+			var _numEffected = 0;
+			var _dmg = 0;
+			
+			with (global.Game.level.playerInst)
+			{
+				var _burnedIndex = checkEffect("Burned");
+				if (-1 != _burnedIndex)
+				{
+					var _effect = Effects[| _burnedIndex];
+					_numEffected = _effect.data.numcards;
+					_dmg = _effect.data.burning_dmg;
+				}
+			}
+			_numEffected = min(array_length(global.Game.level.cardArray),
+				_numEffected);
 			
 			var _x = 224;
 			for (var _i=0;
 				_i<array_length(global.Game.level.cardArray);
 				_i++)
 			{
-				instantiateCard(_x, global.Game.level.cardArray[_i]);
+				_cardIndexes[_i] = instantiateCard(_x, global.Game.level.cardArray[_i]);
 				_x+=195;
 			}
+			for (var _i=0;
+				_i<_numEffected;
+				_i++)
+				with(_cardIndexes[_i])
+					dmg = _dmg;
+
 			startNewGameState(_GAMESTATE_DISPLAY);
 			break;
 			
@@ -131,6 +154,7 @@ function doEffectTurn()
 	checkEffectTurn("Weakened");
 	checkEffectTurn("Darkened");
 	checkEffectTurn("Hypnotized");
+	checkEffectTurn("Burned");
 }
 
 function checkEffectTurn(_Effect)

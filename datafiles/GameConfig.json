@@ -234,7 +234,7 @@
 		}, {
 			"id" : 5,
 			"name" : "Burned",
-			"sprite" : "burn"
+			"sprite" : "ifrit_skill"
 		}, {
 			"id" : 6,
 			"name" : "Darkened",
