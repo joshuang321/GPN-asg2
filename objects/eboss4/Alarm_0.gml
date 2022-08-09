@@ -8,6 +8,7 @@ if (!hasUsed &&
 	curhealth/maxhealth < data.apply_at)
 {
 	hasUsed = true;
+	audio_play_sound(ghostSkill, 0, false);
 	with (global.Game.level.playerInst)
 		addEffect("Darkened", { miss_probability : _miss_prob,
 			turns : _turns });
