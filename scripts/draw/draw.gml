@@ -168,13 +168,18 @@ function drawMapMenuButton()
 function drawPauseMenuButton()
 {
 	draw_set_font(global.uiFont);
-	draw_text(x + sprite_width/2 - string_width(menu_string)/2, y, menu_string);
+	draw_centered(menu_string);
 }
 
 function drawGoldAmount()
 {
 	draw_set_font(global.uiSmallFont);
 	var _menu_str = "Gold : " +string(global.Game.player_gold);
-	draw_text(x + sprite_width/2 - string_width(_menu_str)/2,
-		y, _menu_str);
+	draw_centered(_menu_str);
+}
+
+function draw_centered(_str)
+{
+	draw_text(x + sprite_width/2 - string_width(_str)/2,
+		y, _str);
 }

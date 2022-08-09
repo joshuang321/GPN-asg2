@@ -137,7 +137,7 @@ function createWithOffset(_offset)
 
 function createDeckWithOffset(_offset)
 {
-	var _y = 64;
+	var _y = 160;
 	var _x = 416;
 	
 	for (var _i=0;
