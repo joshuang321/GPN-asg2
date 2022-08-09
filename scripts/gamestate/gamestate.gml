@@ -127,22 +127,21 @@ function chooseCards(_amount)
 
 function doEffectTurn()
 {
-	var _exhaustedIndex = checkEffect("Exhausted");
-	if (-1 != _exhaustedIndex)
+	checkEffectTurn("Exhausted");
+	checkEffectTurn("Weakened");
+	checkEffectTurn("Darkened");
+	checkEffectTurn("Hypnotized");
+}
+
+function checkEffectTurn(_Effect)
+{
+	var _darkenedIndex = checkEffect(_Effect);
+	if (-1 != _darkenedIndex)
 	{
-		var _effect = Effects[| _exhaustedIndex];
-		Effects[| _exhaustedIndex].data.turns --;
-		if (0 == Effects[|_exhaustedIndex].data.turns)
-			removeEffect(_exhaustedIndex);
-	}
-				
-	var _weakenedIndex = checkEffect("Weakened");
-	if (-1 != _weakenedIndex)
-	{
-		var _effect = Effects[| _weakenedIndex];
-		Effects[| _weakenedIndex].data.turns --;
-		if (0 == Effects[|_weakenedIndex].data.turns)
-			removeEffect(_weakenedIndex);
+		var _effect = Effects[| _darkenedIndex];
+		Effects[| _darkenedIndex].data.turns --;
+		if (0 == Effects[|_darkenedIndex].data.turns)
+			removeEffect(_darkenedIndex);
 	}
 }
 
@@ -199,11 +198,16 @@ function addEffect(_effect, _data)
 		ds_list_add(Effects, { effect_id :_effectId, data : _data });
 		
 		startAnimation(asset_get_index(getEffectSprite(_effectId)));
-		instance_create_layer(x, y, "Values", floatingEffect, { effect : _effect + "!",
-			color : #FFFF44 });
+		showEffect(_effect);
 	}
 	else
 		show_debug_message("effect not found");
+}
+
+function showEffect(_effect)
+{
+	instance_create_layer(x, y, "Values", floatingEffect, { effect : _effect + "!",
+			color : #FFFF44 });
 }
 
 function removeEffect(_effectIndex)

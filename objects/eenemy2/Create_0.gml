@@ -1,1 +1,2 @@
 enemyInit();
+hasUsed = false;
