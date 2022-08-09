@@ -18,6 +18,18 @@ function drawCard()
 	var _sprite_info = sprite_get_info(_sprite_asset);
 	draw_sprite(_sprite_asset, 0, x + sprite_width/2 - _sprite_info.width/2,
 		y+ sprite_height/2 - _sprite_info.height/2 -CARD_Y_OFFSET);
+		
+	if (variable_instance_exists(id, "dmg"))
+	{
+		var _sprite_info = sprite_get_info(firedmg);
+		var _x =  x+ sprite_width/2 - _sprite_info.width/2;
+		var _y = y + 25 + sprite_height/2;
+	
+		draw_sprite(firedmg, 0, _x, _y);
+		draw_set_color(#000000);
+		draw_set_font(global.uiVerySmallFont);
+		draw_text(_x +12, _y +16, dmg);
+	}
 	drawPressed();
 }
 
