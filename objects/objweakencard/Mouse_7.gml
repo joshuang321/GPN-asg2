@@ -12,5 +12,4 @@ if (noone != global.Game.level.enemySelected &&
 		var _effect = { amt : _weaken_percent, turns : _turns };
 		addEffect("Weakened", _effect);
 	}
-	instance_destroy(id);
 }

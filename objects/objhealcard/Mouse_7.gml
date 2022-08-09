@@ -9,5 +9,4 @@ if (useCard())
 		startAnimation(player_heal);
 		healHealth(_heal);
 	}
-	instance_destroy(id);
 }

@@ -209,6 +209,7 @@
     {"id":{"name":"sfxMap","path":"sounds/sfxMap/sfxMap.yy",},"order":5,},
     {"id":{"name":"GameOver","path":"sprites/GameOver/GameOver.yy",},"order":0,},
     {"id":{"name":"dragon_attack","path":"sprites/dragon_attack/dragon_attack.yy",},"order":3,},
+    {"id":{"name":"buff","path":"sprites/buff/buff.yy",},"order":4,},
     {"id":{"name":"sEnemySelect","path":"sprites/sEnemySelect/sEnemySelect.yy",},"order":4,},
     {"id":{"name":"LevelRoom","path":"rooms/LevelRoom/LevelRoom.yy",},"order":0,},
   ],
@@ -322,7 +323,7 @@
     {"CopyToMask":-1,"filePath":"datafiles","resourceVersion":"1.0","name":"DampfPlatzsh.ttf","resourceType":"GMIncludedFile",},
   ],
   "MetaData": {
-    "IDEVersion": "2022.6.1.26",
+    "IDEVersion": "2022.6.0.23",
   },
   "resourceVersion": "1.5",
   "name": "GPN asg2",

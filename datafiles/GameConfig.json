@@ -140,8 +140,6 @@
 		"obj" : "eEnemy1",
 		"sprite": "Enemy1",
 		"data" : {
-			"attack_prob_max" : 0.84,
-			"attack_prob_min" : 0.76,
 			"dmg" : 1
 		}
 	}, {
@@ -149,29 +147,23 @@
 		"obj" : "eBoss1",
 		"sprite": "Boss1",
 		"data" : {
-			"attack_prob_max" : 0.96,
-			"attack_prob_min" : 0.86,
-			"buff_at" : 0.5,
-			"dmg" : 5
+			"dmg" : 5,
+			"reflect_at" : 0.5,
+			"attacks" : 5
 		}
 	}, {
 		"id": 3,
 		"obj" : "eEnemy2",
 		"sprite": "Enemy2",
 		"data" : {
-			"attack_prob_max" : 0.96,
-			"attack_prob_min" : 0.86,
-			"buff_at" : 0.5,
-			"dmg" : 2
+			"dmg" : 2,
+			"extra_cost" : 2
 		}
 	}, {
 		"id": 4,
 		"obj" : "eBoss2",
 		"sprite": "Boss2",
 		"data" : {
-			"attack_prob_max" : 0.96,
-			"attack_prob_min" : 0.86,
-			"buff_at" : 0.5,
 			"dmg" : 6
 		}
 	}, {
@@ -179,9 +171,6 @@
 		"obj" : "eEnemy3",
 		"sprite": "Enemy3",
 		"data" : {
-			"attack_prob_max" : 0.96,
-			"attack_prob_min" : 0.86,
-			"buff_at" : 0.5,
 			"dmg" : 5
 		}
 	}, {
@@ -189,9 +178,6 @@
 		"obj" : "eBoss3",
 		"sprite": "Boss3",
 		"data" : {
-			"attack_prob_max" : 0.96,
-			"attack_prob_min" : 0.86,
-			"buff_at" : 0.5,
 			"dmg" : 5
 		}
 	}, {
@@ -199,19 +185,14 @@
 		"obj" : "eEnemy4",
 		"sprite": "Enemy4",
 		"data" : {
-			"attack_prob_max" : 0.96,
-			"attack_prob_min" : 0.86,
-			"buff_at" : 0.5,
-			"dmg" : 5
+			"dmg" : 5,
+			"miss_probability" : 0.34
 		}
 	}, {
 		"id": 8,
 		"obj" : "eBoss4",
 		"sprite": "Boss4",
 		"data" : {
-			"attack_prob_max" : 0.96,
-			"attack_prob_min" : 0.86,
-			"buff_at" : 0.5,
 			"dmg" : 5
 		}
 	}],
@@ -224,6 +205,18 @@
 			"id": 2,
 			"name": "Exhausted",
 			"sprite": "player_exhaust"
+		}, {
+			"id" : 3,
+			"name" : "Reflective",
+			"sprite" : "boss_reflect"
+		}, {
+			"id" : 4,
+			"name" : "Hypnotized",
+			"sprite" : "sorcerer_hypnotize"
+		}, {
+			"id" : 5,
+			"name" : "Darked",
+			"sprite" : "dark"
 		}
 	],
 

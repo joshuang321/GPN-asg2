@@ -8,5 +8,4 @@ if (useCard())
 		startAnimation(armor);
 		block += _block;
 	}
-	instance_destroy(id);
 }

@@ -47,14 +47,43 @@ function nextStep()
 	}
 }
 
-function useCard()
+function calculateCost()
 {
 	var _card_cost = card_cost.init + level * card_cost.inc_step;
+	with (global.Game.level.playerInst)
+	{
+		var _effectIndex = checkEffect("Hypnotized");
+		if (-1 != _effectIndex)
+		{
+			var _effect = Effects[| _effectIndex];
+			_card_cost += _effect.extra_cost;
+		}
+	}
+	return _card_cost;
+}
+
+function useCard()
+{
+	instance_destroy(id);
+	var _card_cost = calculateCost();
+	
 	var _useCard = (global.Game.level.player_skillpts < _card_cost)? false : true;
 	if (_useCard)
 		global.Game.level.player_skillpts -= _card_cost;
 	else
 		audio_play_sound(noEnergy, 0, false);
+		
+	with (global.Game.level.playerInst)
+	{
+		var _effectIndex = checkEffect("Darked");
+		if (-1 != _effectIndex)
+		{
+			var _effect = Effects[| _effectIndex];
+			_useCard = _useCard ? (_effect.miss_probability<random(1.0)? false :
+				true) : false;
+		}
+	}
+	
 	return _useCard;
 }
 

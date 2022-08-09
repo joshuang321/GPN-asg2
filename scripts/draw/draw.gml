@@ -31,7 +31,7 @@ function drawCardNumber(_number)
 
 function drawCardCost()
 {
-	var _cardCost = card_cost.init + level * card_cost.inc_step;
+	var _cardCost = calculateCost();
 	draw_set_font(global.uiSmallFont);
 	draw_set_color(#000000);
 	var _x = x + sprite_width - X_NUM_OFFSET - 20;

@@ -47,29 +47,42 @@ function dealDamage(_self, _damage)
 		with (_self)
 		{
 			var _exhaustedIndex = checkEffect("Exhausted");
-			var _effect = Effects[| _exhaustedIndex];
-			show_debug_message("index: " + string(_exhaustedIndex));
-				
 				
 			if (-1 != _exhaustedIndex)
 			{	
 				
+				var _effect = Effects[| _exhaustedIndex];
 				_damage *= (1 - _effect.data.amt);
 				show_debug_message("Enemy Exhausted!");
 			}
 		}
 	}
-	with (id)
-	{
-		var _weakenedIndex = checkEffect("Weakened");
-		var _effect = Effects[| _weakenedIndex];
+
+	var _weakenedIndex = checkEffect("Weakened");
 		
-		if (-1 != _weakenedIndex)
-		{		
-			_damage *= (1 + _effect.data.amt);
-			show_debug_message("Enemy Weakened!");
-		}
+	if (-1 != _weakenedIndex)
+	{	
+		var _effect = Effects[| _weakenedIndex];
+		_damage *= (1 + _effect.data.amt);
+		show_debug_message("Enemy Weakened!");
 	}
+	
+	var _reflectIndex = checkEffect("Reflective");
+	if (-1 != _reflectIndex)
+	{
+		show_debug_message(Effects[| _reflectIndex]);
+		_effect = Effects[| _reflectIndex];
+		_effect.data.attacks --;
+		if (0 == _effect.data.attacks)
+			removeEffect("Reflective");
+			
+		
+		var _playerDamage = floor(_damage/2);
+		_damage -= _playerDamage;
+		with (global.Game.level.playerInst)
+			dealDamage(id, _playerDamage);
+	}
+	
 	_damage = ceil(_damage);
 	if (block < _damage)
 	{
