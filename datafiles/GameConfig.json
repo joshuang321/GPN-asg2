@@ -109,8 +109,8 @@
 			"inc_step": 1
 		},
 		"card_cost" : {
-			"init" : 1,
-			"inc_step" : 0.5
+			"init" : 3,
+			"inc_step" : 0
 		},
 		"upgrade_cost" : {
 			"init" : 1,
@@ -122,12 +122,12 @@
 		"card_type" : 3,
 		"sprite": "cDesperateAttack",
 		"data": {
-			"init_dmg": 14,
-			"inc_step": 1
+			"init_dmg": 15,
+			"inc_step": 2
 		},
 		"card_cost" : {
-			"init" : 1,
-			"inc_step" : 0.5
+			"init" : 2,
+			"inc_step" : 0
 		},
 		"upgrade_cost" : {
 			"init" : 1,
@@ -142,7 +142,7 @@
 		"data" : {
 			"attack_prob_max" : 0.84,
 			"attack_prob_min" : 0.76,
-			"dmg" : 1
+			"dmg" : 2
 		}
 	}, {
 		"id": 2,
@@ -162,7 +162,7 @@
 			"attack_prob_max" : 0.96,
 			"attack_prob_min" : 0.86,
 			"buff_at" : 0.5,
-			"dmg" : 2
+			"dmg" : 3
 		}
 	}, {
 		"id": 4,
@@ -172,7 +172,7 @@
 			"attack_prob_max" : 0.96,
 			"attack_prob_min" : 0.86,
 			"buff_at" : 0.5,
-			"dmg" : 6
+			"dmg" : 7
 		}
 	}, {
 		"id": 5,
@@ -182,7 +182,7 @@
 			"attack_prob_max" : 0.96,
 			"attack_prob_min" : 0.86,
 			"buff_at" : 0.5,
-			"dmg" : 5
+			"dmg" : 4
 		}
 	}, {
 		"id": 6,
@@ -192,7 +192,7 @@
 			"attack_prob_max" : 0.96,
 			"attack_prob_min" : 0.86,
 			"buff_at" : 0.5,
-			"dmg" : 5
+			"dmg" : 8
 		}
 	}, {
 		"id": 7,
@@ -212,7 +212,7 @@
 			"attack_prob_max" : 0.96,
 			"attack_prob_min" : 0.86,
 			"buff_at" : 0.5,
-			"dmg" : 5
+			"dmg" : 10
 		}
 	}],
 
@@ -262,16 +262,16 @@
 
 	"stages" : [{
 		"start_at" : 0,
-		"gold" : 4
+		"gold" : 2
 	}, {
 		"start_at" : 5,
-		"gold" : 6
+		"gold" : 3
 	}, {
 		"start_at" : 10,
-		"gold" : 8
+		"gold" : 4
 	}, {
 		"start_at" : 15,
-		"gold" : 10
+		"gold" : 5
 	}, {
 		"start_at" : 20,
 		"gold" : -1

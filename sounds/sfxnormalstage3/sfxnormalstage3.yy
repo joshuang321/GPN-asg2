@@ -1,7 +1,7 @@
 {
   "conversionMode": 0,
   "compression": 0,
-  "volume": 0.31,
+  "volume": 1.0,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -11,8 +11,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "sfxnormalstage3.mp3",
-  "duration": 129.93306,
+  "soundFile": "sfxnormalstage3.ogg",
+  "duration": 72.1407,
   "parent": {
     "name": "Stage3",
     "path": "folders/Sounds/Stages/Stage3.yy",

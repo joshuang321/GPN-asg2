@@ -320,6 +320,7 @@
     {"CopyToMask":-1,"filePath":"datafiles","resourceVersion":"1.0","name":"airmill_o.ttf","resourceType":"GMIncludedFile",},
     {"CopyToMask":-1,"filePath":"datafiles","resourceVersion":"1.0","name":"air_mitalic.ttf","resourceType":"GMIncludedFile",},
     {"CopyToMask":-1,"filePath":"datafiles","resourceVersion":"1.0","name":"DampfPlatzsh.ttf","resourceType":"GMIncludedFile",},
+    {"CopyToMask":-1,"filePath":"datafiles","resourceVersion":"1.0","name":"SHOP.txt","resourceType":"GMIncludedFile",},
   ],
   "MetaData": {
     "IDEVersion": "2022.6.1.26",
