@@ -37,12 +37,11 @@ function loadGame()
 	global.GameConfig = load_json_data("GameConfig.json",
 		"Failed to load Game Config!",
 		"GameConfig.json does not exists!");
-	show_debug_message(global.GameConfig);
+
 	
 	global.GameLevel = load_json_data("GameLevel.json",
 		"Failed to load Levels!",
 		"GameLevel.json does not exists!");
-	show_debug_message(global.GameLevel);
 	
 	global.Game = noone;
 		
@@ -64,6 +63,7 @@ function GameCard(_Card) constructor
 	sprite = _Card.sprite;
 	data = _Card.data;
 	card_cost = _Card.card_cost;
+	upgrade_cost = _Card.upgrade_cost;
 	level = 0;
 }
 
@@ -97,6 +97,7 @@ function Level() constructor
 	player_pending_list = ds_list_create();
 	enemies = ds_list_create();
 	enemySelected = noone;
+	enemyTurn = noone;
 }
 
 function cGame() constructor
@@ -104,17 +105,38 @@ function cGame() constructor
 	player_health = global.GameConfig.starting_player.init_health;
 	player_skillpts = global.GameConfig.starting_player.init_skillpt;
 	player_card = ds_list_create();
+	player_card_inventory = ds_list_create();
+	temp_shop_inventory = ds_list_create();
 	
 	for (var _i=0;
-		_i<array_length(global.GameConfig.starting_player.init_card);
+		_i<min(global.GameConfig.max_card_slot,
+			array_length(global.GameConfig.starting_player.init_card));
 		_i++)
 	{
 		var _card = findCardFromId(global.GameConfig.starting_player.init_card[_i]);
-		ds_list_add(player_card, new GameCard(_card));
+		_card = new GameCard(_card);
+		ds_list_add(player_card, _card);
+		ds_list_add(temp_shop_inventory, _card);
 	}
 	
-	player_gold = 0;
-	curLevel = 19;
+	if (global.GameConfig.max_card_slot <
+		array_length(global.GameConfig.starting_player.init_card))
+	{
+		for (var _j=_i;
+			_j<array_length(global.GameConfig.starting_player.init_card);
+			_j++)
+		{
+			_card = findCardFromId(global.GameConfig.starting_player.init_card[_j]);
+			_card = new GameCard(_card);
+			
+			ds_list_add(player_card_inventory, _card);
+			ds_list_add(temp_shop_inventory, _card);
+		}
+	}
+	temp_shop_offset = 0;
+	
+	player_gold = 5;
+	curLevel = 2;
 }
 
 function NewLevel(_levelNo)
@@ -131,7 +153,6 @@ function NewLevel(_levelNo)
 	}
 	
 	global.Game.level = new Level();
-	
 	var _level = getLevel(_levelNo);
 	
 	var _x = room_width - 98;
@@ -162,21 +183,18 @@ function loadStory()
 {
 	global.Game.storyIndex = 0;
 	audio_play_sound(asset_get_index(global.Game.curLevel == array_length(global.GameLevel)
-		? global.GameConfig.final_cutscene.bgm :global.GameConfig.story[global.Game.curLevel div 5].bgm),
+		? global.GameConfig.final_cutscene.bgm : global.GameConfig.beginning_cutscene.bgm),
 		0, true);
 }
 
 function loadNextParagraph()
 {
 	var _curParagraph = global.Game.curLevel == array_length(global.GameLevel) ? global.GameConfig.final_cutscene.paragraphs :
-	global.GameConfig.story[global.Game.curLevel div 5].paragraphs;
+	global.GameConfig.beginning_cutscene.paragraphs;
 	
 	if (global.Game.storyIndex == array_length(_curParagraph))
 	{
-		if (global.Game.curLevel == array_length(global.GameLevel))
-			room_goto(MapRoom);
-		else
-			room_goto(LevelRoom);
+		room_goto(MapRoom);
 		return;
 	}
 	
@@ -184,6 +202,11 @@ function loadNextParagraph()
 		_curParagraph[global.Game.storyIndex].background));
 
 	global.Game.storyIndex++;
+}
+
+function loadCutscene()
+{
+	
 }
 
 function getLevel(_levelNo)
@@ -215,6 +238,8 @@ function setBackground(_level)
 function destroyCurrentGame()
 {
 	ds_list_destroy(global.Game.player_card);
+	ds_list_destroy(global.Game.player_card_inventory);
+	ds_list_destroy(global.Game.temp_shop_inventory);
 	delete global.Game;
 }
 
@@ -222,7 +247,7 @@ function destroyCurrentLevel()
 {
 	ds_list_destroy(global.Game.level.player_pending_list);
 	ds_list_destroy(global.Game.level.enemies);
-	delete global.Game.Level;
+	delete global.Game.level;
 }
 
 function findCardFromId(_card_id)

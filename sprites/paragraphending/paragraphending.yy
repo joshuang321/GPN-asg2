@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Story",
-    "path": "folders/Sprites/Story.yy",
+    "path": "folders/Sprites/UI/Menu/Story.yy",
   },
   "resourceVersion": "1.0",
   "name": "ParagraphEnding",

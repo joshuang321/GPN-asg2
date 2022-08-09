@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Titles",
-    "path": "folders/Sprites/Titles.yy",
+    "path": "folders/Sprites/UI/Menu/Titles.yy",
   },
   "resourceVersion": "1.0",
   "name": "Map",

@@ -5,6 +5,12 @@ function entityInit()
 	block = 0;
 }
 
+function enemyInit()
+{
+	entityInit();
+	time = 0;
+}
+
 function entityDestroy()
 {
 	ds_list_destroy(Effects);

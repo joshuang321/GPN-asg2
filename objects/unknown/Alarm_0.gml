@@ -15,7 +15,8 @@ else if (global.Game.level.gameState == _GAMESTATE_VICTORY)
 		_i<array_length(global.GameConfig.stages);
 		_i++)
 		if (global.GameConfig.stages[_i].start_at > global.Game.curLevel)
-			_amt = global.GameConfig.stages[_i-1].gold;
+			_amt = global.GameConfig.stages[_i-1].gold * array_length(global.GameLevel[
+				global.Game.curLevel].enemies);
 	
 	global.Game.curLevel++;
 	global.Game.player_gold += _amt;
@@ -25,7 +26,11 @@ else if (global.Game.level.gameState == _GAMESTATE_VICTORY)
 	instance_create_layer(0, 400, "GameVictory", GoldText, { amt : _amt });
 	
 	if (global.Game.curLevel == array_length(global.GameLevel))
+	{
 		instance_destroy(inst_18143139);
+		with (inst_7EA4D2AC)
+			menu_string = "Final Cutscene";
+	}
 	
 	layer_background_sprite(layer_background_get_id("Background"),
 		GameVictory);

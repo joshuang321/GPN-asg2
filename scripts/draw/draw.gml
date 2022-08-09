@@ -41,6 +41,28 @@ function drawCardCost()
 	draw_text(_x, _y, _cardCost);
 }
 
+function drawCardCostUpgrade()
+{
+	draw_set_font(global.uiSmallFont);
+	draw_set_color(#000000);
+	var str = "Card Cost: " + string(upgrade_cost.init +
+		level * upgrade_cost.inc_step);
+	var str_width = string_width("Card Cost: " + str);
+	draw_text(x, y -30, str);
+}
+
+function drawCardLevel()
+{
+	var _sprite_info = sprite_get_info(cardLevel);
+	var _x =  x+ sprite_width/2 - _sprite_info.width/2;
+	var _y = y + 25 + sprite_height/2;
+	
+	draw_sprite(cardLevel, 0, _x, _y);
+	draw_set_color(#FFFFFF);
+	draw_set_font(global.uiVerySmallFont);
+	draw_text(_x +12, _y +6, level);
+}
+
 #macro _HEALTHBAR_WIDTH		180
 
 function drawhealthbar(cur_health, m_health, _x, _y, _s_width, _block)
@@ -68,8 +90,7 @@ function drawhealthbar(cur_health, m_health, _x, _y, _s_width, _block)
 
 function drawSelected()
 {
-	if (variable_instance_exists(id, "time") &&
-		id == global.Game.level.enemySelected)
+	if (id == global.Game.level.enemySelected)
 	{
 		var _spriteSelectInfo = sprite_get_info(sEnemySelect);
 		var _channel = animcurve_get_channel(floatingSelectAnimation, 0);		
@@ -78,7 +99,15 @@ function drawSelected()
 			* FLOAT_MAG;
 		draw_sprite(sEnemySelect, 0, x + sprite_width/2 - _spriteSelectInfo.width/2, _y);
 	}
-	
+	else if (id == global.Game.level.enemyTurn)
+	{
+		var _spriteSelectInfo = sprite_get_info(sEnemySelect);
+		var _channel = animcurve_get_channel(floatingSelectAnimation, 0);		
+		time = (time + 0.01) mod 1;
+		var _y = y - SPACING  - animcurve_channel_evaluate(_channel, time)
+			* FLOAT_MAG;
+		draw_sprite(sEnemyTurn, 0, x + sprite_width/2 - _spriteSelectInfo.width/2, _y);
+	}
 }
 
 function drawAnimation()
@@ -123,3 +152,9 @@ function drawMapMenuButton()
 	draw_text(x + sprite_width/2 - string_width(menu_string)/2,
 		y + sprite_height + MAP_MENU_Y_GAP, menu_string);
 }	
+
+function drawPauseMenuButton()
+{
+	draw_set_font(global.uiFont);
+	draw_text(x + sprite_width/2 - string_width(menu_string)/2, y, menu_string);
+}

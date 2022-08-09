@@ -71,6 +71,7 @@ function startNewGameState(_gameState)
 			break;
 				
 		case _GAMESTATE_ENEMY_END:
+			global.Game.level.enemyTurn = noone;
 			for (var _i=0;
 				_i<ds_list_size(global.Game.level.enemies);
 				_i++)
@@ -92,7 +93,6 @@ function startNewGameState(_gameState)
 			layer_set_visible("Menu", false);
 			instance_deactivate_layer("Menu");
 			layer_destroy_instances("Cards");
-			show_debug_message("FINALGAMESTATE:" + string(global.Game.level.gameState));
 			
 			with (inst_1FB0A37B)
 				alarm[0] = 4 * _GAME_FPS;
@@ -123,12 +123,6 @@ function chooseCards(_amount)
 		_i++)
 		_cardArray[_i] = ds_stack_pop(global.Game.level.player_stack);
 	return _cardArray;	
-}
-
-function instantiateCard(_x, _Card)
-{
-	instance_create_layer(_x, 864, "Cards", asset_get_index(_Card.obj),
-		_Card);
 }
 
 function doEffectTurn()
@@ -203,13 +197,13 @@ function addEffect(_effect, _data)
 	if (-1 == checkEffect(_effect))
 	{
 		ds_list_add(Effects, { effect_id :_effectId, data : _data });
-		show_debug_message("sprite_index: " + string(asset_get_index(getEffectSprite(_effectId))));
+		
 		startAnimation(asset_get_index(getEffectSprite(_effectId)));
 		instance_create_layer(x, y, "Values", floatingEffect, { effect : _effect + "!",
 			color : #FFFF44 });
 	}
 	else
-	show_debug_message("effect not found");
+		show_debug_message("effect not found");
 }
 
 function removeEffect(_effectIndex)
@@ -217,6 +211,7 @@ function removeEffect(_effectIndex)
 	instance_create_layer(x, y, "Values", floatingEffect, { effect :
 		getEffectNameFromId(Effects[| _effectIndex].effect_id) +
 		" fades", color : #DDDDDD });
+	
 	ds_list_delete(Effects, _effectIndex);
 }
 
@@ -225,7 +220,7 @@ function handleStoryButton()
 	if (sAnchor == sprite_index)
 	{	
 		if (0 == global.Game.curLevel mod 5)
-			room_goto(StoryRoom);
+			room_goto(CutsceneRoom);
 		else
 		{	
 			audio_play_sound(buttonClick, 0, false);

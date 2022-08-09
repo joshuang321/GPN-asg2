@@ -1,1 +1,1 @@
-entityInit();
+enemyInit()
